@@ -28,8 +28,7 @@
       "@/public/*": ["./public/*"],
       "@/styles/*": ["src/app/styles/*"],
       "@/types/*": ["src/app/types/*"],
-      "@/utils/*": ["src/app/utils/*"],
-      "content-collections": ["./.content-collections/generated"]
+      "@/utils/*": ["src/app/utils/*"]
     },
     "target": "ES2017"
   },

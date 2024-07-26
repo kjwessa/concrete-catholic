@@ -19,7 +19,7 @@ export function Footer() {
             <a href="#" className="flex flex-col justify-center items-start px-5">
               <Image
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0022d6175a05f0a67e94f295d1aee733228c5c7d26d07706a7c0d6e1e5b1c01?apiKey=30aa5622865a4691b40c2c8f7feb241d&&apiKey=30aa5622865a4691b40c2c8f7feb241d"
+                src=""
                 alt="Social Media Icon 1"
                 width={20}
                 height={20}
@@ -29,7 +29,7 @@ export function Footer() {
             <a href="#" className="flex flex-col justify-center items-start px-5">
               <Image
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/749f09c2767ad1ad05a6173542d2efda062fd160dec03141b675a2fb0d5e9ad8?apiKey=30aa5622865a4691b40c2c8f7feb241d&&apiKey=30aa5622865a4691b40c2c8f7feb241d"
+                src=""
                 alt="Social Media Icon 2"
                 width={20}
                 height={20}
@@ -42,7 +42,7 @@ export function Footer() {
           <div className="flex gap-5 justify-between w-full text-sm leading-5 text-white text-opacity-50 tracking-[2px] max-md:flex-wrap max-md:max-w-full">
             <Image
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e78bf64ce55d0fc86e4557e14f0d1cb27662c9d1b41353eb99e6a1121eb05b7?apiKey=30aa5622865a4691b40c2c8f7feb241d&&apiKey=30aa5622865a4691b40c2c8f7feb241d"
+              src=""
               alt="Concrete Catholic Logo"
               width={175}
               height={96}

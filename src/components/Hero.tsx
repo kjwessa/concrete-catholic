@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { BtnMain } from "./BtnMain";
+import { LinkMain } from "./LInkMain";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -19,19 +21,11 @@ export function Hero() {
               </div>
 
               <p className="mb-8 max-w-[37.50rem] overflow-visible text-lg">
-                Encounter begins with a simple prayer. Let us begin.{" "}
+                Encounter begins with a simple prayer. Let us begin.
               </p>
               <div className="mb-8 flex items-center text-xl text-yellow-600">
-                <BtnMain text="learn more" link="/#" />
-                <a
-                  className="relative inline-block max-w-full overflow-hidden pb-3"
-                  href="https://www.concretecatholic.com/#meet-jack"
-                  id="a-1"
-                >
-                  <div className="cursor-pointer">Meet Fr. Jack Knight</div>
-
-                  <div className="absolute left-0 mt-2 h-0.5 w-1/5 cursor-pointer bg-orange-400 text-orange-400" />
-                </a>
+                <BtnMain text="Listen Now" link="/#" />
+                <LinkMain link="/#" text="Meet Fr. Jack Knight" />
               </div>
             </div>
 

@@ -10,8 +10,6 @@
     "clean": "rm -rf .next/ && rm -rf node_modules/ && npm install"
   },
   "dependencies": {
-    "@million/lint": "^1.0.0-rc.26",
-    "@tailwindcss/typography": "^0.5.13",
     "next": "14.2.4",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",

@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="mb-52 mt-64 w-full max-w-[1370px] self-center max-md:my-10 max-md:max-w-full">
+    <section className="w-full self-center max-md:my-10 max-md:max-w-full">
       <div>
         <div
           className="flex min-h-screen flex-col items-center justify-center bg-gray-800 pb-24 pt-20 text-sm text-white"
           id="div-1"
         >
-          <div className="relative flex w-[90%] max-w-[85.63rem]">
+          <div className="relative z-20 flex w-[90%] max-w-[85.63rem]">
             <div className="relative">
               <div className="uppercase text-white/[0.5]" id="div-2">
                 A podcast for the Every day Catholic
               </div>
 
               <div className="max-w-[47.50rem] overflow-hidden pb-1.5 text-7xl font-extrabold">
-                <h1 className="max-w-[50.00rem] pb-3.5 pt-6">
+                <h1 className="z-20 max-w-[50.00rem] pb-3.5 pt-6">
                   When was the last time you had an encounter with Christ?
                 </h1>
               </div>

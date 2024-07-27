@@ -14,7 +14,7 @@ export function PrayerSection() {
                 Encounter begins with a<br /> simple prayer.
               </h3>
               <h4 className="mt-16 text-xl font-extrabold leading-6 max-md:mt-10 max-md:max-w-full">
-                "Lord Jesus, reveal yourself to me..."
+                Lord Jesus, reveal yourself to me...
               </h4>
               <p className="mt-2.5 text-base leading-8 max-md:max-w-full">
                 This simple prayer begins by acknowledging the person of Christ,{" "}
@@ -22,7 +22,7 @@ export function PrayerSection() {
                 now...
               </p>
               <h4 className="mt-8 text-xl font-extrabold leading-6 max-md:max-w-full">
-                "...in a real and concrete way today."
+                ...in a real and concrete way today.
               </h4>
               <p className="mt-2.5 text-base leading-8 max-md:max-w-full">
                 We pray that Jesus reveals Himself to us in our joys, our
@@ -50,7 +50,7 @@ export function PrayerSection() {
         <div className="flex gap-5 max-md:flex-col">
           <div className="flex w-[76%] flex-col max-md:ml-0 max-md:w-full">
             <h2 className="grow text-3xl font-extrabold leading-9 text-white max-md:mt-10 max-md:max-w-full">
-              "Jesus, reveal yourself to me in a real and concrete way today."
+              Jesus, reveal yourself to me in a real and concrete way today.
             </h2>
           </div>
           <div className="ml-5 flex w-[24%] flex-col max-md:ml-0 max-md:w-full">

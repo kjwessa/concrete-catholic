@@ -1,13 +1,11 @@
 import Image from "next/image";
+import { BtnMain } from "./BtnMain";
 
 export function Hero() {
   return (
-    <section className="w-full self-center max-md:my-10 max-md:max-w-full">
-      <div>
-        <div
-          className="flex min-h-screen flex-col items-center justify-center bg-gray-800 pb-24 pt-20 text-sm text-white"
-          id="div-1"
-        >
+    <section className="w-full self-center bg-gray-800">
+      <div className="container mx-auto w-full">
+        <div className="flex min-h-screen flex-col items-center justify-center pb-24 pt-6 text-sm text-white">
           <div className="relative z-20 flex w-[90%] max-w-[85.63rem]">
             <div className="relative">
               <div className="uppercase text-white/[0.5]" id="div-2">
@@ -24,15 +22,7 @@ export function Hero() {
                 Encounter begins with a simple prayer. Let us begin.{" "}
               </p>
               <div className="mb-8 flex items-center text-xl text-yellow-600">
-                <a
-                  className="relative max-w-full overflow-hidden bg-white px-10 py-5"
-                  href="https://www.concretecatholic.com/#listen-now"
-                >
-                  <div className="cursor-pointer">Listen Now</div>
-
-                  <div className="absolute right-full top-0 z-[1] h-full w-full cursor-pointer bg-zinc-700" />
-                </a>
-
+                <BtnMain text="learn more" link="/#" />
                 <a
                   className="relative inline-block max-w-full overflow-hidden pb-3"
                   href="https://www.concretecatholic.com/#meet-jack"

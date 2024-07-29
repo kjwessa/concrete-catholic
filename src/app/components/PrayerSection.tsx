@@ -1,19 +1,25 @@
 import Image from "next/image";
+import PrayerSectionImage from "@/public/images/Concrete_Catholic_bnw-81.jpg";
 
 export function PrayerSection() {
   return (
     <section className="flex w-full flex-col p-20 max-md:max-w-full max-md:px-5">
       <div>
-        <div
-          className="flex flex-col items-center justify-center pb-24 pt-48 text-sm"
-          src="https://uploads-ssl.webflow.com/5df7d07f7410e6a41204c0fd/5df7d07f7410e6ecfb04c139_pexels-photo-212286.jpeg"
-        >
+        <div className="flex flex-col items-center justify-center pb-24 pt-48 text-sm">
           <div className="relative w-[90%] max-w-[85.63rem]">
             <div className="grid auto-cols-fr grid-cols-[1fr_1.4fr] grid-rows-[auto_auto] gap-x-10 gap-y-5">
               <div
-                className='relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-[url("https://www.concretecatholic.com/images/Concrete_Catholic_bnw-81.jpg")] bg-cover'
+                className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-cover"
                 id="div-3"
-              ></div>
+              >
+                <Image
+                  src={PrayerSectionImage}
+                  alt="Concrete Catholic"
+                  layout="fill"
+                  objectFit="cover"
+                  quality={100}
+                />
+              </div>
 
               <div
                 className="col-start-1 col-end-2 row-start-1 row-end-2"

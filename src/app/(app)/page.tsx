@@ -1,10 +1,11 @@
 import { Hero } from "../components/Hero";
-import { AudienceSection } from "../components/AudienceSection";
+import { PrayerSection } from "../components/PrayerSection";
 
 export default function Page() {
   return (
     <>
       <Hero />
+      <PrayerSection />
     </>
   );
 }

@@ -2,6 +2,22 @@ import "./globals.css";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import localFont from "next/font/local";
+
+// Import DM Sans
+const DMSans = localFont({
+  variable: "--font-dm-sans",
+  display: "swap",
+  src: [
+    { path: "../fonts/DMSans.ttf", weight: "100 400 900", style: "normal" },
+  ],
+});
+
+// Import EB Garamond
+const EBGaramond = localFont({
+  variable: "--font-eb-garamond",
+  display: "swap",
+  src: [{ path: "../fonts/EBGaramond.ttf", weight: "400", style: "normal" }],
+});
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`antialiased ${DMSans.variable} ${EBGaramond.variable}`}>
         <Header />
         <main className="flex min-h-svh flex-col">{children}</main>
         <Footer />

@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import localFont from "next/font/local";
 export default function RootLayout({
   children,
 }: Readonly<{

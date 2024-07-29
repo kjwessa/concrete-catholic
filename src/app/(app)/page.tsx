@@ -11,6 +11,7 @@ import { CoverSection } from "../components/CoverSection";
 import { SubscribeSection } from "@/components/SubscribeSection";
 import { AboutJackSection } from "../components/AboutJackSection";
 import { WhatIfSection } from "../components/WhatIfSection";
+import { ListenNowSection } from "../components/ListenNowSection";
 
 export default function Page() {
   return (
@@ -21,13 +22,15 @@ export default function Page() {
       <QuoteSection />
       <InviteSection />
       <AudienceSection />
+      <SubscribeSection />
       <CoverSection />
       <BeConcreteSection />
+
       <QuoteSection />
       <AboutJackSection />
       <WhatIfSection />
+      <ListenNowSection />
       <FAQSection />
-      <SubscribeSection />
       <ContactSection />
     </>
   );

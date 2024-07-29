@@ -2,10 +2,7 @@ export function WhatIfSection() {
   return (
     <>
       <div>
-        <div
-          className="flex flex-col items-center justify-center py-24 text-sm"
-          src="https://uploads-ssl.webflow.com/5df7d07f7410e6a41204c0fd/5df7d07f7410e6ecfb04c139_pexels-photo-212286.jpeg"
-        >
+        <div className="flex flex-col items-center justify-center py-24 text-sm">
           <div className="relative w-[90%] max-w-[85.63rem]">
             <div
               className="grid auto-cols-fr grid-cols-[1.4fr_1fr] grid-rows-[auto_auto] gap-x-10 gap-y-5"

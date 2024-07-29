@@ -1,5 +1,5 @@
 import { BtnMain } from "./BtnMain";
-import { LinkMain } from "./LInkMain";
+import { LinkMain } from "./LinkMain";
 
 export function Hero() {
   return (

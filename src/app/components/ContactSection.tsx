@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { useRef, useState } from "react";
 
-export function SubscribeSection() {
+export function ContactSection() {
   return (
     <section className="w-full bg-yellow-600 pb-16 pr-20 max-md:max-w-full max-md:pr-5">
       <div className="flex gap-5 max-md:flex-col">

@@ -6,6 +6,7 @@ import { FAQSection } from "../components/FAQSection";
 import { ContactSection } from "../components/ContactSection";
 import { QuoteSection } from "../components/QuoteSection";
 import { InviteSection } from "../components/InviteSection";
+import { CoverSection } from "../components/CoverSection";
 
 export default function Page() {
   return (
@@ -14,8 +15,9 @@ export default function Page() {
       <LogoSection />
       <PrayerSection />
       <QuoteSection />
-      <AudienceSection />
       <InviteSection />
+      <CoverSection />
+      <AudienceSection />
       <FAQSection />
       <QuoteSection />
       <ContactSection />

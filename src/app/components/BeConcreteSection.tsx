@@ -41,7 +41,7 @@ const concreteCardItems = [
   {
     title: "02. Pray",
     content:
-      '  This step, while obvious, must still be said. This is a state of "being," not a state of "doing." With your eyes fixed on Christ, it becomes natural to ask Jesus to reveal Himself in the circumstances of your life.',
+      'This step, while obvious, must still be said. This is a state of "being," not a state of "doing." With your eyes fixed on Christ, it becomes natural to ask Jesus to reveal Himself in the circumstances of your life.',
   },
   {
     title: "03. Anticipate",
@@ -55,7 +55,7 @@ interface ConcreteCardProps {
   content: string;
 }
 
-function ConcreteCard({ title, content }) {
+function ConcreteCard({ title, content }: ConcreteCardProps) {
   return (
     <div>
       <h3 className="mb-8 text-[2.50rem] font-extrabold leading-none">

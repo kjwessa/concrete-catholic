@@ -21,29 +21,29 @@ export function CoverSection() {
         </div>
 
         <div className="-mb-96 grid min-h-[31.25rem] w-full max-w-[85.63rem] auto-cols-fr grid-cols-[1fr_1fr_1fr] grid-rows-[auto] gap-[0.63rem] px-3 text-3xl font-extrabold">
-          <div className="relative col-start-3 col-end-4 row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
-            <h4 className="absolute left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
-              How to share your experiences with others.
-            </h4>
-          </div>
-
-          <div className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
-            <h4 className="absolute left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
-              How to encounter Christ in the ordinary.
-            </h4>
-          </div>
-
-          <div className="relative col-start-1 col-end-2 row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
-            <h4 className="absolute left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
-              How to pray in a simple and authentic way.
-            </h4>
-          </div>
+          {coverCardItems.map((card, index) => (
+            <CoverCard key={index} />
+          ))}
         </div>
       </div>
     </section>
   );
 }
 
+const coverCardItems = [
+  { title: "How to share your experiences with others.", content: "" },
+  { title: "How to encounter Christ in the ordinary.", content: "" },
+  { title: "How to pray in a simple and authentic way.", content: "" },
+];
+
 function CoverCard() {
-  return <div></div>;
+  return (
+    <div>
+      <div className="relative col-start-3 col-end-4 row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
+        <h4 className="absolute left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
+          {}
+        </h4>
+      </div>
+    </div>
+  );
 }

@@ -1,30 +1,17 @@
 export function FAQSection() {
   return (
-    <>
-      <div>
-        <div
-          className="flex flex-col items-center justify-center pb-48 pt-24 text-center text-sm"
-          id="div-1"
-        >
-          <div className="w-[90%] max-w-[85.63rem]">
+    <section>
+      <div className="container">
+        <div className="flex flex-col items-center justify-center pb-48 pt-24 text-center text-sm">
+          <div>
             <h2 className="mb-8 text-6xl font-extrabold">
               Got questions?
               <br />
               We have answers.
-              <a
-                className="text-teal-300"
-                href="https://iamablogger.convertkit.com/creator-pass/#faq1"
-              >
-                <br className="cursor-pointer" />
-              </a>
             </h2>
 
             <div className="mb-10 flex flex-col border-2 border-solid border-yellow-600">
-              <a
-                className="flex max-w-full items-center justify-between p-10 text-yellow-600"
-                href="https://www.concretecatholic.com/#"
-                id="a-1"
-              >
+              <a className="flex max-w-full items-center justify-between p-10 text-yellow-600">
                 <h5 className="mr-10 cursor-pointer text-xl font-bold text-black">
                   What makes Concrete Catholic different from other podcasts?
                 </h5>
@@ -90,6 +77,6 @@ export function FAQSection() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

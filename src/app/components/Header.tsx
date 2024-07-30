@@ -10,10 +10,10 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="bg-cc-charcoal z-10 flex w-full items-center justify-center px-16 pt-9">
-      <div className="flex w-full max-w-[1375px] justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
+    <header className="bg-cc-charcoal z-10 w-full px-12 pt-2 text-white text-opacity-75">
+      <div className="container mx-auto flex w-full max-w-screen-2xl justify-between gap-5">
         <Logo />
-        <nav className="my-auto flex items-center text-sm leading-5 text-white text-opacity-50">
+        <nav className="my-auto flex items-center text-sm leading-5">
           {navItems.map((item, index) => (
             <NavItem key={index} label={item.label} isActive={item.isActive} />
           ))}

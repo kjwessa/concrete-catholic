@@ -1,4 +1,5 @@
 import Image from "next/image";
+import QuoteJackImage from "@/public/images/Concrete_Catholic_bnw-40.jpg";
 
 interface QuoteSectionProps {
   image: string;
@@ -18,9 +19,9 @@ export function QuoteSection({
   return (
     <section className="relative mt-44 flex min-h-[850px] w-[1536px] max-w-full flex-col items-center justify-center px-16 py-20 font-extrabold max-md:mt-10 max-md:pl-5">
       <Image
-        src=""
+        src={image}
         alt="Background"
-        layout="fill"
+        fill
         objectFit="cover"
         className="absolute inset-0"
       />
@@ -37,7 +38,7 @@ export function QuoteSection({
           </div>
         </blockquote>
         <Image
-          src={image}
+          src={QuoteJackImage}
           alt={alt}
           width={300}
           height={390}

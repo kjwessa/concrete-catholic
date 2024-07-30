@@ -19,13 +19,25 @@ export default function Page() {
       <Hero />
       <LogoSection />
       <PrayerSection />
-      <QuoteSection />
+      <QuoteSection
+        image=""
+        alt=""
+        quoteAuthor=""
+        quoteContent=""
+        quoteSource=""
+      />
       <InviteSection />
       <AudienceSection />
       <SubscribeSection />
       <CoverSection />
       <BeConcreteSection />
-      <QuoteSection />
+      <QuoteSection
+        image=""
+        alt=""
+        quoteAuthor=""
+        quoteContent=""
+        quoteSource=""
+      />
       <AboutJackSection />
       <WhatIfSection />
       <ListenNowSection />

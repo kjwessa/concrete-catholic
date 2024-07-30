@@ -2,10 +2,10 @@ import { Logo } from "./Logo";
 import { NavItem } from "./NavItem";
 
 const navItems = [
-  { label: "About Us" },
-  { label: "Meet Fr. Jack" },
-  { label: "Contact" },
-  { label: "Listen Now", isActive: true },
+  { text: "Meet Fr. Jack", link: "" },
+  { text: "About Us", link: "" },
+  { text: "Contact", link: "" },
+  { text: "Listen Now", link: "", isActive: true },
 ];
 
 export function Header() {
@@ -15,7 +15,12 @@ export function Header() {
         <Logo />
         <nav className="my-auto flex items-center text-sm leading-5">
           {navItems.map((item, index) => (
-            <NavItem key={index} label={item.label} isActive={item.isActive} />
+            <NavItem
+              key={index}
+              text={item.text}
+              link={item.link}
+              isActive={item.isActive}
+            />
           ))}
         </nav>
       </div>

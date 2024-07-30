@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-export function QuoteSection() {
+interface QuoteSectionProps {}
+
+export function QuoteSection({ image }) {
   return (
     <section className="relative mt-44 flex min-h-[850px] w-[1536px] max-w-full flex-col items-center justify-center px-16 py-20 font-extrabold max-md:mt-10 max-md:pl-5">
       <Image

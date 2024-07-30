@@ -25,7 +25,6 @@ export default function Page() {
       <SubscribeSection />
       <CoverSection />
       <BeConcreteSection />
-
       <QuoteSection />
       <AboutJackSection />
       <WhatIfSection />

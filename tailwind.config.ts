@@ -14,17 +14,26 @@ const config: Config = {
       },
       colors: {
         cc: {
+          // Main Dark BG Color
           charcoal: "#222831",
+          // Main Light BG Color
+          snow: "#F1F1F1",
+          // Red BG Color
+          crimson: "#A63D40",
+          // Orange BG & Button Color
           sunset: "#C8812E",
+          // Orange Text/Accent
           tangerine: "#F49D37",
-          aqua: "#59C3C3",
+          // Card White
+          white: "#FFFFFF",
+          // Card Charcoal Blue
           slate: "#425664",
+          // Button Hover Color
           steel: "#393E46",
+          // Unused for Now
+          aqua: "#59C3C3",
           navy: "#323C4F",
           lavender: "#CCD1E8",
-          crimson: "#A63D40",
-          white: "#FFFFFF",
-          snow: "#F1F1F1",
           pearl: "#E2E2E2",
           silver: "#CCCCCC",
           ash: "#C1C1C1",

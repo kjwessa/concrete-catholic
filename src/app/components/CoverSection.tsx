@@ -55,12 +55,10 @@ interface CoverCardProps {
 
 function CoverCard({ title, content }: CoverCardProps) {
   return (
-    <div>
-      <div className="relative row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
-        <h4 className="left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
-          {title}
-        </h4>
-        <p>{content}</p>
+    <div className="bg-cc-slate relative cursor-pointer p-10">
+      <div className="flex h-full w-full flex-col justify-between">
+        <h4 className="text-3xl font-bold">{title}</h4>
+        <p className="font-sans text-base font-normal">{content}</p>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 export function BeConcreteSection() {
   return (
-    <>
+    <section className="bg-cc-crimson">
       <div>
         <div
-          className="flex flex-col items-center justify-center bg-pink-800 pb-24 pt-72 text-center text-sm text-white"
+          className="flex flex-col items-center justify-center pb-24 pt-72 text-center text-sm text-white"
           id="div-1"
         >
           <div className="flex w-[90%] max-w-[85.63rem] flex-col items-start justify-center">
@@ -13,11 +13,7 @@ export function BeConcreteSection() {
 
             <p className="mb-8 max-w-xs text-lg">
               We have created Concrete Catholic as an invitation to walk with us
-              as we walk with Christ.{" "}
-              <a
-                className="underline"
-                href="https://www.concretecatholic.com/mailto:contact@urosmikic.com?subject=Webflow%20Template%20Question"
-              />
+              as we walk with Christ.
             </p>
 
             <div className="flex h-auto w-[90%] max-w-[34.38rem] flex-col items-start justify-start self-center overflow-visible">
@@ -62,6 +58,6 @@ export function BeConcreteSection() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

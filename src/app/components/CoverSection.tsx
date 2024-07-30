@@ -22,7 +22,7 @@ export function CoverSection() {
 
         <div className="-mb-96 grid min-h-[31.25rem] w-full max-w-[85.63rem] auto-cols-fr grid-cols-[1fr_1fr_1fr] grid-rows-[auto] gap-[0.63rem] px-3 text-3xl font-extrabold">
           {coverCardItems.map((card, index) => (
-            <CoverCard key={index} title={card.title} />
+            <CoverCard key={index} title={card.title} content={card.content} />
           ))}
         </div>
       </div>
@@ -31,9 +31,21 @@ export function CoverSection() {
 }
 
 const coverCardItems = [
-  { title: "How to share your experiences with others.", content: "" },
-  { title: "How to encounter Christ in the ordinary.", content: "" },
-  { title: "How to pray in a simple and authentic way.", content: "" },
+  {
+    title: "How to share your experiences with others.",
+    content:
+      "Life is complicated, but prayer doesn't have to be. We approach life (and begin our Podcast) with a simple prayer: \"Jesus, reveal yourself to me today in a real and concrete way.\" That's it.",
+  },
+  {
+    title: "How to encounter Christ in the ordinary.",
+    content:
+      "Through the Incarnation, Christ took on our flesh, and entered into every experience of our lives. He longs to meet us in our work, in our families, in our joys, in our sorrows.",
+  },
+  {
+    title: "How to pray in a simple and authentic way.",
+    content:
+      "Sometimes we encounter Jesus, but we have no idea how to share what we've experienced. We'll walk through how to share what you've encountered with your friends and your family.",
+  },
 ];
 
 interface CoverCardProps {
@@ -44,8 +56,8 @@ interface CoverCardProps {
 function CoverCard({ title, content }: CoverCardProps) {
   return (
     <div>
-      <div className="relative col-start-3 col-end-4 row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
-        <h4 className="absolute left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
+      <div className="relative row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
+        <h4 className="left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
           {title}
         </h4>
         <p>{content}</p>

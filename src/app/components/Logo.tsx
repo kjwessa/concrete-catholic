@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import LogoImage from "@/public/images/cc-logo.png";
 export function Logo() {
   return (
-    <div className="flex items-center justify-center">
+    <Link href="/" className="cursor-pointer">
       <Image
         src={LogoImage}
         alt="Concrete Catholic Logo"
@@ -10,6 +11,6 @@ export function Logo() {
         height={96}
         priority
       />
-    </div>
+    </Link>
   );
 }

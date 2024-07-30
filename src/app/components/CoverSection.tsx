@@ -22,7 +22,7 @@ export function CoverSection() {
 
         <div className="-mb-96 grid min-h-[31.25rem] w-full max-w-[85.63rem] auto-cols-fr grid-cols-[1fr_1fr_1fr] grid-rows-[auto] gap-[0.63rem] px-3 text-3xl font-extrabold">
           {coverCardItems.map((card, index) => (
-            <CoverCard key={index} />
+            <CoverCard key={index} title={card.title} />
           ))}
         </div>
       </div>
@@ -36,13 +36,19 @@ const coverCardItems = [
   { title: "How to pray in a simple and authentic way.", content: "" },
 ];
 
-function CoverCard() {
+interface CoverCardProps {
+  title: string;
+  content: string;
+}
+
+function CoverCard({ title, content }: CoverCardProps) {
   return (
     <div>
       <div className="relative col-start-3 col-end-4 row-start-1 row-end-2 flex cursor-pointer flex-col items-start justify-end bg-slate-600 p-10">
         <h4 className="absolute left-[2.50rem] right-[2.50rem] top-[5.00rem] mb-8">
-          {}
+          {title}
         </h4>
+        <p>{content}</p>
       </div>
     </div>
   );

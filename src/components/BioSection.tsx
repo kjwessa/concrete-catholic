@@ -1,4 +1,4 @@
-export function AboutJackSection() {
+export function BioSection() {
   return (
     <>
       <div>

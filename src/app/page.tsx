@@ -9,7 +9,7 @@ import { InviteSection } from "@/components/InviteSection";
 import { BeConcreteSection } from "@/components/BeConcreteSection";
 import { CoverSection } from "@/components/CoverSection";
 import { SubscribeSection } from "@/components/SubscribeSection";
-import { AboutJackSection } from "@/components/AboutJackSection";
+import { BioSection } from "@/components/BioSection";
 import { WhatIfSection } from "@/components/WhatIfSection";
 import { ListenNowSection } from "@/components/ListenNowSection";
 
@@ -38,7 +38,7 @@ export default function Page() {
         quoteContent="The truly interesting question for man is neither logic, a fascinating game, nor demonstration, an inviting curiosity. Rather, the intriguing problem for man is how to adhere to reality, to become aware of reality."
         quoteSource="The Religious Sense"
       />
-      <AboutJackSection />
+      <BioSection />
       <WhatIfSection />
       <ListenNowSection />
       <FAQSection />

@@ -48,7 +48,10 @@ export function WhatIfSection() {
               ></div>
 
               <div className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] min-w-[53.13rem] items-center justify-between justify-self-end">
-                <ListenCTA />
+                <ListenCTA
+                  text="Jesus, reveal yourself to me in a real and concrete way today."
+                  link="/"
+                />
               </div>
             </div>
           </div>

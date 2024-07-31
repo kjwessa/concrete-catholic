@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PrayerSectionImage from "@/public/images/Concrete_Catholic_bnw-81.jpg";
-import { BtnMain } from "./BtnMain";
+import { ListenCTA } from "./ListenCTA";
 import { Eyebrow } from "./Eyebrow";
 
 export function PrayerSection() {
@@ -47,13 +47,8 @@ export function PrayerSection() {
                   reality.
                 </p>
               </div>
-
-              <div className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] min-w-[53.13rem] items-center justify-between bg-yellow-600 px-16 py-20 text-white">
-                <h4 className="mr-28 max-w-[25.00rem] text-3xl font-extrabold">
-                  "Jesus, reveal yourself to me in a real and concrete way
-                  today."
-                </h4>
-                <BtnMain link="" text="Listen Now" />
+              <div className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] items-center justify-between text-white">
+                <ListenCTA />
               </div>
             </div>
           </div>

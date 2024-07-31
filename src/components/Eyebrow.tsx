@@ -3,9 +3,5 @@ interface EyebrowProps {
 }
 
 export function Eyebrow({ text }: EyebrowProps) {
-  return (
-    <div className="uppercase text-white/[0.5]" id="div-2">
-      {text}
-    </div>
-  );
+  return <div className="mb-4 uppercase text-inherit opacity-70">{text}</div>;
 }

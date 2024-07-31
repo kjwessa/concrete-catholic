@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PrayerSectionImage from "@/public/images/Concrete_Catholic_bnw-81.jpg";
 import { BtnMain } from "./BtnMain";
+import { Eyebrow } from "./Eyebrow";
 
 export function PrayerSection() {
   return (
@@ -19,9 +20,7 @@ export function PrayerSection() {
                 />
               </div>
               <div className="col-start-1 col-end-2 row-start-1 row-end-2">
-                <div className="uppercase text-zinc-400" id="div-5">
-                  Pray. Encounter. Share.
-                </div>
+                <Eyebrow text="Pray. Encounter. Share." />
 
                 <h3 className="mb-8 max-w-[26.25rem] text-[2.50rem] font-extrabold leading-none">
                   Encounter begins with a simple prayer.

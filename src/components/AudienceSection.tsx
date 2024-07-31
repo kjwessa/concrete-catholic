@@ -39,33 +39,48 @@ export function AudienceSection() {
             </div>
           </div>
           {audienceCardItems.map((card, index) => (
-            <div key={index} className="ml-5 flex w-[36%] flex-col max-md:ml-0">
-              <div className="flex grow flex-col text-black">
-                <div className="flex flex-col justify-center p-5">
-                  <div className="flex flex-col bg-white shadow-2xl">
-                    <div className="relative h-0 w-full pb-[66%]">
-                      <Image
-                        src={card.image}
-                        alt={card.title}
-                        fill
-                        style={{ objectFit: "cover" }}
-                      />
-                    </div>
-                    <div className="flex flex-col p-8">
-                      <h3 className="text-3xl font-extrabold leading-9">
-                        {card.title}
-                      </h3>
-                      <p className="mt-8 text-lg leading-9">
-                        {card.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <AudienceCard
+              key={index}
+              image={card.image}
+              title={card.title}
+              description={card.description}
+            />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+interface AudienceCardProps {
+  image: string;
+  title: string;
+  description: string;
+}
+
+function AudienceCard({ image, title, description }: AudienceCardProps) {
+  return (
+    <>
+      <div className="ml-5 flex w-[36%] flex-col max-md:ml-0">
+        <div className="flex grow flex-col text-black">
+          <div className="flex flex-col justify-center p-5">
+            <div className="flex flex-col bg-white shadow-2xl">
+              <div className="relative h-0 w-full pb-[66%]">
+                <Image
+                  src={image}
+                  alt={title}
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="flex flex-col p-8">
+                <h3 className="text-3xl font-extrabold leading-9">{title}</h3>
+                <p className="mt-8 text-lg leading-9">{description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

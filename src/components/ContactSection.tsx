@@ -1,19 +1,18 @@
 import Image from "next/image";
-
+import ContactImage from "@/images/Concrete_Catholic_bnw-62.jpg";
 import { useRef, useState } from "react";
 
 export function ContactSection() {
   return (
     <section className="w-full bg-cc-sunset pb-16 pr-20 max-md:max-w-full max-md:pr-5">
-      <div className="flex gap-5 max-md:flex-col">
-        <div className="flex w-[63%] flex-col max-md:ml-0 max-md:w-full">
+      <div className="relative flex gap-5 max-md:flex-col">
+        <div className="relative flex w-[63%] flex-col max-md:ml-0 max-md:w-full">
           <Image
             loading="lazy"
-            src=""
+            src={ContactImage}
             alt="Fr. Jack"
-            width={800}
-            height={630}
-            className="aspect-[1.27] w-full grow max-md:mt-7 max-md:max-w-full"
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div className="ml-5 flex w-[37%] flex-col max-md:ml-0 max-md:w-full">

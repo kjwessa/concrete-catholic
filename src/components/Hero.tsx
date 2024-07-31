@@ -12,7 +12,7 @@ export function Hero() {
           <div className="relative z-20 flex flex-col content-center justify-center">
             <Eyebrow text="A podcast for the Every day Catholic" />
             <div className="max-w-[47.50rem] overflow-hidden pb-1.5 text-7xl font-extrabold">
-              <h1 className="z-20 max-w-[50.00rem] pb-3.5 pt-6">
+              <h1 className="max-w-[50.00rem] pb-3.5 pt-6">
                 When was the last time you had an encounter with Christ?
               </h1>
             </div>

@@ -1,15 +1,24 @@
-import { FC } from 'react';
+import { FC } from "react";
+import { twMerge } from "tailwind-merge";
+import Link from "next/link";
 
 interface NavItemProps {
-  label: string;
+  text: string;
+  link: string;
   isActive?: boolean;
 }
 
-export const NavItem: FC<NavItemProps> = ({ label, isActive }) => {
+// TODO merge styling using tw merge
+// TODO add hover state to each button
+// TODO ensure button sizes are more consistent
+export const NavItem: FC<NavItemProps> = ({ text, link, isActive }) => {
   return (
-    <div className={`self-stretch px-5 py-1 my-auto ${isActive ? 'text-xl text-yellow-600' : 'tracking-[2px]'}`}>
-      {label}
-      {isActive && <div className="shrink-0 mt-2 h-0.5 bg-orange-400" />}
-    </div>
+    <Link
+      href={link}
+      className={`my-auto self-stretch px-5 py-1 ${isActive ? "text-xl text-yellow-600" : "tracking-[2px]"}`}
+    >
+      {text}
+      {isActive && <div className="mt-2 h-0.5 shrink-0 bg-orange-400" />}
+    </Link>
   );
 };

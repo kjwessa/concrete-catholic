@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 
 export function ContactSection() {
   return (
-    <section className="w-full bg-yellow-600 pb-16 pr-20 max-md:max-w-full max-md:pr-5">
+    <section className="w-full bg-cc-sunset pb-16 pr-20 max-md:max-w-full max-md:pr-5">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex w-[63%] flex-col max-md:ml-0 max-md:w-full">
           <Image

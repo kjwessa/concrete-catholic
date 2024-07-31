@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Eyebrow } from "./Eyebrow";
 
 export function InviteSection() {
   return (
@@ -7,9 +8,7 @@ export function InviteSection() {
         <div className="flex gap-5 max-md:flex-col">
           <div className="flex w-[67%] flex-col max-md:ml-0 max-md:w-full">
             <div className="my-auto flex flex-col self-stretch pb-8 pr-12 max-md:mt-10 max-md:max-w-full">
-              <h2 className="text-xs uppercase leading-5 tracking-[2px] text-zinc-400 max-md:max-w-full">
-                Fr. Jack Says...
-              </h2>
+              <Eyebrow text="Fr. Jack Says" />
               <h3 className="mt-8 text-4xl font-extrabold leading-10 text-black max-md:max-w-full">
                 "Give it a shot, I think <br /> you'll love this podcast."
               </h3>

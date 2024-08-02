@@ -6,10 +6,10 @@ export function ContactSection() {
   return (
     <section
       id="contact-section"
-      className="w-full bg-cc-sunset pb-16 pr-20 max-md:max-w-full max-md:pr-5"
+      className="w-full bg-cc-sunset pb-16 pr-20 text-white"
     >
-      <div className="relative flex gap-5 max-md:flex-col">
-        <div className="relative flex w-[63%] flex-col max-md:ml-0 max-md:w-full">
+      <div className="container flex">
+        <div className="relative flex w-[63%] flex-col">
           <Image
             loading="lazy"
             src={ContactImage}
@@ -18,19 +18,14 @@ export function ContactSection() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="ml-5 flex w-[37%] flex-col max-md:ml-0 max-md:w-full">
-          <div className="my-auto flex flex-col self-stretch pb-4 max-md:mt-10 max-md:max-w-full">
-            <h2 className="text-sm leading-5 text-white max-md:max-w-full">
-              Its great to meet you!
-            </h2>
-            <h3 className="mt-8 self-start text-6xl font-extrabold leading-[72px] text-white max-md:text-4xl">
+        <div className="ml-5 flex flex-col">
+          <div className="my-auto flex flex-col self-stretch pb-4 max-md:mt-10">
+            <h2 className="text-sm leading-5">Its great to meet you!</h2>
+            <h3 className="mt-8 self-start text-6xl font-extrabold leading-[72px] max-md:text-4xl">
               Contact Fr. Jack
             </h3>
             <form className="mt-8">
-              <label
-                htmlFor="name"
-                className="text-base font-bold text-white max-md:max-w-full"
-              >
+              <label htmlFor="name" className="text-base font-bold">
                 Name
               </label>
               <input
@@ -42,7 +37,7 @@ export function ContactSection() {
 
               <label
                 htmlFor="email"
-                className="mt-4 text-base font-bold text-white max-md:max-w-full"
+                className="mt-4 text-base font-bold max-md:max-w-full"
               >
                 Email Address
               </label>

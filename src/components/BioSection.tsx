@@ -3,7 +3,7 @@ import { Eyebrow } from "./Eyebrow";
 export function BioSection() {
   return (
     <section id="bio-section">
-      <div>
+      <div className="container">
         <div className="grid auto-cols-fr grid-cols-[1fr_1fr] grid-rows-[auto] flex-col items-center justify-center gap-4 bg-gray-800 px-6 pb-24 pt-12 text-sm text-white">
           <div className="relative flex w-full max-w-[85.63rem] flex-col items-start justify-center justify-self-end px-3">
             <Eyebrow text="Meet the Presenter" />

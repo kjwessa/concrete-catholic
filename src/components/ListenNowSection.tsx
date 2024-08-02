@@ -2,14 +2,11 @@ export function ListenNowSection() {
   return (
     <section id="listen-now-section">
       <div>
-        <div
-          className="flex flex-col items-center justify-center py-24 text-center text-sm"
-          id="div-1"
-        >
+        <div className="flex flex-col items-center justify-center py-24 text-center text-sm">
           <div className="relative flex w-[90%] max-w-[85.63rem] flex-col items-center">
             <h2 className="mb-8 text-6xl font-extrabold">Listen now.</h2>
 
-            <div className="pb-6 pt-3" id="div-2">
+            <div className="pb-6 pt-3">
               "Lord Jesus, reveal yourself to me today in a real and concrete
               way."
             </div>
@@ -26,10 +23,7 @@ export function ListenNowSection() {
                 }}
               ></div>
 
-              <div
-                className="flex min-h-[31.25rem] flex-col items-center justify-center pt-3"
-                id="div-5"
-              >
+              <div className="flex min-h-[31.25rem] flex-col items-center justify-center pt-3">
                 <iframe
                   className="h-[31.25rem] w-96"
                   src="https://play.pod.co/concretecatholic"

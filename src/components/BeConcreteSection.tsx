@@ -1,6 +1,6 @@
 export function BeConcreteSection() {
   return (
-    <section className="bg-cc-crimson">
+    <section id="be-concrete-section" className="bg-cc-crimson">
       <div>
         <div
           className="flex flex-col items-center justify-center pb-24 pt-72 text-center text-sm text-white"

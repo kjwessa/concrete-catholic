@@ -5,7 +5,10 @@ import { Eyebrow } from "./Eyebrow";
 
 export function PrayerSection() {
   return (
-    <section className="flex w-full flex-col p-20 max-md:max-w-full max-md:px-5">
+    <section
+      id="prayer-section"
+      className="flex w-full flex-col p-20 max-md:max-w-full max-md:px-5"
+    >
       <div>
         <div className="flex flex-col items-center justify-center pb-24 pt-48 text-sm">
           <div className="relative w-[90%] max-w-[85.63rem]">

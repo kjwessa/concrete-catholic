@@ -1,6 +1,6 @@
 export function ListenNowSection() {
   return (
-    <>
+    <section id="listen-now-section">
       <div>
         <div
           className="flex flex-col items-center justify-center py-24 text-center text-sm"
@@ -81,6 +81,6 @@ export function ListenNowSection() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

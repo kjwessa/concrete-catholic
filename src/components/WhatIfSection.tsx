@@ -3,7 +3,7 @@ import { ListenCTA } from "./ListenCTA";
 
 export function WhatIfSection() {
   return (
-    <>
+    <section id="what-if-section">
       <div>
         <div className="flex flex-col items-center justify-center py-24 text-sm">
           <div className="relative w-[90%] max-w-[85.63rem]">
@@ -57,6 +57,6 @@ export function WhatIfSection() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

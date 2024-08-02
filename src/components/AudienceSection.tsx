@@ -24,7 +24,10 @@ const audienceCardItems = [
 
 export function AudienceSection() {
   return (
-    <section className="flex w-full items-center justify-center px-16 py-20">
+    <section
+      id="audience-section"
+      className="flex w-full items-center justify-center px-16 py-20"
+    >
       <div className="my-5 w-full max-w-[1370px]">
         <div className="flex gap-5">
           <div className="flex w-[27%] flex-col max-md:ml-0">

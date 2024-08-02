@@ -1,6 +1,6 @@
 export function SubscribeSection() {
   return (
-    <div>
+    <section id="subscribe-section">
       <div className="relative flex flex-col items-center justify-center pb-48 pt-24 text-center text-sm">
         <div className="relative flex min-h-[15.63rem] w-[90%] max-w-[62.50rem] flex-col items-center justify-center p-20">
           <div className="w-full">
@@ -36,6 +36,6 @@ export function SubscribeSection() {
           Concrete Catholic as we grow.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

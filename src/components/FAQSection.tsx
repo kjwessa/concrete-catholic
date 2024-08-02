@@ -4,7 +4,7 @@ import FAQIcon from "@/public/images/icons8-plus.svg";
 
 export function FAQSection() {
   return (
-    <section>
+    <section id="faq-section">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center pb-48 pt-24 text-sm">
           <div>

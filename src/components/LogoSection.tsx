@@ -29,7 +29,10 @@ const sponsorLogos = [
 
 export function LogoSection() {
   return (
-    <section className="w-full justify-center border-b border-zinc-100 px-5 py-px max-md:max-w-full">
+    <section
+      id="logo-section"
+      className="w-full justify-center border-b border-zinc-100 px-5 py-px max-md:max-w-full"
+    >
       <div className="flex gap-5 max-md:flex-col">
         {sponsorLogos.map((logo, index) => (
           <div

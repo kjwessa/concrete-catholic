@@ -31,7 +31,7 @@ export function LogoSection() {
   return (
     <section
       id="logo-section"
-      className="w-full justify-center border-b border-zinc-100 px-5 py-px max-md:max-w-full"
+      className="w-full justify-center border-b border-zinc-100 px-5 py-px"
     >
       <div className="flex gap-5 max-md:flex-col">
         {sponsorLogos.map((logo, index) => (
@@ -39,7 +39,7 @@ export function LogoSection() {
             key={index}
             className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full"
           >
-            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:max-w-full max-md:px-5">
+            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
               <Image
                 src={logo.src}
                 alt={logo.alt}

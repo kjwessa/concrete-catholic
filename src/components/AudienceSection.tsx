@@ -24,11 +24,8 @@ const audienceCardItems = [
 
 export function AudienceSection() {
   return (
-    <section
-      id="audience-section"
-      className="flex w-full items-center justify-center px-8 py-20"
-    >
-      <div className="container">
+    <section id="audience-section" className="w-full px-8 py-20">
+      <div className="container mx-auto">
         <div className="flex gap-5">
           <div className="flex w-[27%] flex-col max-md:ml-0">
             <div className="my-auto flex flex-col self-stretch pb-8 text-black">

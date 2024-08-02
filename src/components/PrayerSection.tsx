@@ -5,12 +5,9 @@ import { Eyebrow } from "./Eyebrow";
 
 export function PrayerSection() {
   return (
-    <section
-      id="prayer-section"
-      className="flex w-full flex-col p-20 max-md:max-w-full max-md:px-5"
-    >
-      <div>
-        <div className="flex flex-col items-center justify-center pb-24 pt-48 text-sm">
+    <section id="prayer-section" className="w-full pb-24 pt-48">
+      <div className="container mx-auto">
+        <div className="flex flex-col items-center justify-center text-sm">
           <div className="relative w-[90%] max-w-[85.63rem]">
             <div className="grid auto-cols-fr grid-cols-[1fr_1.4fr] grid-rows-[auto_auto] gap-x-10 gap-y-5">
               <div className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-cover">
@@ -31,7 +28,6 @@ export function PrayerSection() {
 
                 <h5 className="mb-3 text-xl font-extrabold">
                   "Lord Jesus, reveal yourself to me..."
-                  <br />
                 </h5>
 
                 <p className="mb-8 max-w-[31.88rem]">

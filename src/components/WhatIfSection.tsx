@@ -3,9 +3,9 @@ import { ListenCTA } from "./ListenCTA";
 
 export function WhatIfSection() {
   return (
-    <section id="what-if-section">
-      <div>
-        <div className="flex flex-col items-center justify-center py-24 text-sm">
+    <section id="what-if-section" className="py-24">
+      <div className="container mx-auto">
+        <div className="flex flex-col items-center justify-center text-sm">
           <div className="relative w-[90%] max-w-[85.63rem]">
             <div className="grid auto-cols-fr grid-cols-[1.4fr_1fr] grid-rows-[auto_auto] gap-x-10 gap-y-5">
               <div className="col-start-2 col-end-3 row-start-1 row-end-2 pr-12">

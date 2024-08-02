@@ -6,12 +6,9 @@ import InviteImage from "@/images/Concrete_Catholic-77.jpg";
 
 export function InviteSection() {
   return (
-    <section
-      id="invite-section"
-      className="mt-44 flex w-full items-center justify-center px-16 py-20"
-    >
-      <div className="container">
-        <div className="mb-5 mt-32">
+    <section id="invite-section" className="px-16 py-20">
+      <div className="container mx-auto">
+        <div className="">
           <div className="flex gap-5">
             <div className="flex w-[67%] flex-col">
               <div className="my-auto flex flex-col self-stretch pb-8 pr-12">

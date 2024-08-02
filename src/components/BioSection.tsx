@@ -2,9 +2,9 @@ import { Eyebrow } from "./Eyebrow";
 
 export function BioSection() {
   return (
-    <section id="bio-section">
-      <div className="container">
-        <div className="grid auto-cols-fr grid-cols-[1fr_1fr] grid-rows-[auto] flex-col items-center justify-center gap-4 bg-gray-800 px-6 pb-24 pt-12 text-sm text-white">
+    <section id="bio-section" className="bg-cc-charcoal text-white">
+      <div className="container mx-auto">
+        <div className="grid auto-cols-fr grid-cols-[1fr_1fr] grid-rows-[auto] flex-col items-center justify-center gap-4 px-6 pb-24 pt-12 text-sm">
           <div className="relative flex w-full max-w-[85.63rem] flex-col items-start justify-center justify-self-end px-3">
             <Eyebrow text="Meet the Presenter" />
             <h2 className="mb-8 text-[4.38rem] font-extrabold leading-none">

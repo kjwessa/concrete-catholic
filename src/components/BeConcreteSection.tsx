@@ -1,8 +1,11 @@
 export function BeConcreteSection() {
   return (
-    <section id="be-concrete-section" className="bg-cc-crimson text-white">
-      <div className="container">
-        <div className="flex flex-col items-center justify-center pb-24 pt-72 text-center text-sm">
+    <section
+      id="be-concrete-section"
+      className="w-full bg-cc-crimson text-white"
+    >
+      <div className="container mx-auto w-full">
+        <div className="flex w-full flex-col items-center justify-center pb-24 pt-72 text-center text-sm">
           <div className="flex flex-col items-start justify-center">
             <h2 className="mb-8 text-[4.38rem] font-extrabold leading-none">
               Be a Concrete Catholic

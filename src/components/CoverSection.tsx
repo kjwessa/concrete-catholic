@@ -1,8 +1,11 @@
 export function CoverSection() {
   return (
-    <section id="cover-section" className="bg-cc-charcoal text-white">
-      <div className="container relative flex flex-col items-center justify-center pb-36 pt-24 text-center">
-        <div className="flex w-[90%] max-w-[85.63rem] flex-col items-center justify-center">
+    <section
+      id="cover-section"
+      className="bg-cc-charcoal pb-36 pt-24 text-white"
+    >
+      <div className="container mx-auto flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center">
           <h2 className="text-[4.38rem] font-extrabold leading-none">
             What do we cover? 
           </h2>

@@ -28,7 +28,7 @@ export function QuoteSection({
         objectFit="cover"
         className="absolute inset-0"
       />
-      <div className="relative mb-10 mt-16 flex w-full max-w-[1370px] justify-between gap-5 bg-white bg-opacity-90 p-20 shadow-2xl max-md:mt-10 max-md:max-w-full max-md:flex-wrap max-md:px-5">
+      <div className="relative mb-10 mt-16 flex w-full max-w-[1370px] justify-between gap-5 bg-white bg-opacity-90 p-20 shadow-2xl">
         <blockquote className="mt-24 flex flex-col self-end max-md:mt-10 max-md:max-w-full">
           <p className="text-4xl leading-9 text-black max-md:max-w-full">
             {quoteContent}

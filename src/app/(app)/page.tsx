@@ -19,14 +19,25 @@ export default function Page() {
       <Hero />
       <LogoSection />
       <PrayerSection />
-      <QuoteSection />
+      <QuoteSection
+        image="/images/atlanta-traffic-guy-1200.jpg"
+        alt=""
+        quoteAuthor="Pope Benedict XVI"
+        quoteContent="Being Christian is not the result of an ethical choice or a lofty idea, but the encounter with an event, a person, which gives life a new horizon and a decisive direction."
+        quoteSource="Deus Caritas Est"
+      />
       <InviteSection />
       <AudienceSection />
       <SubscribeSection />
       <CoverSection />
       <BeConcreteSection />
-
-      <QuoteSection />
+      <QuoteSection
+        image="/images/atlanta-traffic-guy-1200.jpg"
+        alt=""
+        quoteAuthor="Luigi Giussani"
+        quoteContent="The truly interesting question for man is neither logic, a fascinating game, nor demonstration, an inviting curiosity. Rather, the intriguing problem for man is how to adhere to reality, to become aware of reality."
+        quoteSource="The Religious Sense"
+      />
       <AboutJackSection />
       <WhatIfSection />
       <ListenNowSection />

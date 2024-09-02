@@ -46,10 +46,7 @@ export function AboutJackSection() {
             </a>
           </div>
 
-          <div
-            className='-mt-28 h-[110vh] min-h-[auto] bg-[url("https://www.concretecatholic.com/images/Concrete_Catholic_bnw-33.jpg")] bg-cover'
-            id="div-3"
-          />
+          <div className='-mt-28 h-[110vh] min-h-[auto] bg-[url("https://www.concretecatholic.com/images/Concrete_Catholic_bnw-33.jpg")] bg-cover' />
         </div>
       </div>
     </>

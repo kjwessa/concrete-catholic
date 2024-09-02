@@ -1,23 +1,24 @@
 import Image from "next/image";
+import BusyCatholicImage from "@/public/images/busy-catholic-small.jpg";
 
 const audienceCards = [
   {
     title: 'The "Everyday Catholic"',
     description:
       "Children know well what we often forget...just keep it simple. You do not need a fancy degree to encounter Christ in your daily life, just a willingness to try.",
-    imageSrc: "",
+    image: "",
   },
   {
     title: 'The "Struggling Catholic"',
     description:
       "Life is hard, and sometimes the darkness seems to surround us all. We know no matter how bad things seem to be, that Jesus has conquered all, even death itself.",
-    imageSrc: "",
+    image: "",
   },
   {
     title: 'The "Busy Catholic"',
     description:
       'Balancing a career, kids, and a mortgage is not easy. Even though Jesus never promised "easy," He did promise that He would never abandon us.',
-    imageSrc: "",
+    image: "",
   },
 ];
 
@@ -46,11 +47,10 @@ export function AudienceSection() {
                 <div className="flex flex-col justify-center p-5 max-md:max-w-full">
                   <div className="flex flex-col bg-white shadow-2xl max-md:max-w-full">
                     <Image
-                      src={card.imageSrc}
+                      src={card.image}
                       alt={card.title}
                       width={500}
                       height={275}
-                      className="aspect-[1.82] w-full max-md:max-w-full"
                     />
                     <div className="flex flex-col p-8 max-md:max-w-full max-md:px-5">
                       <h3 className="text-3xl font-extrabold leading-9">

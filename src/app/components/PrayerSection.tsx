@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PrayerSectionImage from "@/public/images/Concrete_Catholic_bnw-81.jpg";
+import { BtnMain } from "./BtnMain";
 
 export function PrayerSection() {
   return (
@@ -8,10 +9,7 @@ export function PrayerSection() {
         <div className="flex flex-col items-center justify-center pb-24 pt-48 text-sm">
           <div className="relative w-[90%] max-w-[85.63rem]">
             <div className="grid auto-cols-fr grid-cols-[1fr_1.4fr] grid-rows-[auto_auto] gap-x-10 gap-y-5">
-              <div
-                className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-cover"
-                id="div-3"
-              >
+              <div className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-cover">
                 <Image
                   src={PrayerSectionImage}
                   alt="Concrete Catholic"
@@ -20,11 +18,7 @@ export function PrayerSection() {
                   quality={100}
                 />
               </div>
-
-              <div
-                className="col-start-1 col-end-2 row-start-1 row-end-2"
-                id="div-4"
-              >
+              <div className="col-start-1 col-end-2 row-start-1 row-end-2">
                 <div className="uppercase text-zinc-400" id="div-5">
                   Pray. Encounter. Share.
                 </div>
@@ -55,26 +49,12 @@ export function PrayerSection() {
                 </p>
               </div>
 
-              <div
-                className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] min-w-[53.13rem] items-center justify-between bg-yellow-600 px-16 py-20 text-white"
-                id="div-6"
-              >
-                <h4
-                  className="mr-28 max-w-[25.00rem] text-3xl font-extrabold"
-                  id="h4-1"
-                >
+              <div className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] min-w-[53.13rem] items-center justify-between bg-yellow-600 px-16 py-20 text-white">
+                <h4 className="mr-28 max-w-[25.00rem] text-3xl font-extrabold">
                   "Jesus, reveal yourself to me in a real and concrete way
                   today."
                 </h4>
-
-                <a
-                  className="relative max-w-full overflow-hidden bg-white px-10 py-5 text-xl text-yellow-600"
-                  href="https://www.concretecatholic.com/#listen-now"
-                >
-                  <div className="cursor-pointer">Listen Now</div>
-
-                  <div className="absolute right-full top-0 z-[1] h-full w-full cursor-pointer bg-zinc-700" />
-                </a>
+                <BtnMain link="" text="Listen Now" />
               </div>
             </div>
           </div>

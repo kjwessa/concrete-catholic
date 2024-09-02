@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { BtnMain } from "./BtnMain";
-import { LinkMain } from "./LInkMain";
-import Link from "next/link";
+import { LinkMain } from "./LinkMain";
 
 export function Hero() {
   return (

@@ -6,7 +6,10 @@ import HeroImage from "@/public/images/Concrete_Catholic-86.jpg";
 
 export function Hero() {
   return (
-    <section className="w-full self-center bg-cc-charcoal text-white">
+    <section
+      id="hero-section"
+      className="w-full self-center bg-cc-charcoal text-white"
+    >
       <div className="container mx-auto pt-24">
         <div className="grid grid-cols-2">
           <div className="relative z-20 flex flex-col content-center justify-center">

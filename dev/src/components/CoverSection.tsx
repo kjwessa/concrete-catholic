@@ -1,8 +1,11 @@
 export function CoverSection() {
   return (
-    <section className="bg-cc-charcoal text-white">
-      <div className="relative flex flex-col items-center justify-center pb-36 pt-24 text-center">
-        <div className="flex w-[90%] max-w-[85.63rem] flex-col items-center justify-center">
+    <section
+      id="cover-section"
+      className="bg-cc-charcoal pb-36 pt-24 text-white"
+    >
+      <div className="container mx-auto flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center">
           <h2 className="text-[4.38rem] font-extrabold leading-none">
             What do we cover? 
           </h2>
@@ -55,7 +58,7 @@ interface CoverCardProps {
 
 function CoverCard({ title, content }: CoverCardProps) {
   return (
-    <div className="bg-cc-slate relative cursor-pointer p-10">
+    <div className="relative cursor-pointer bg-cc-slate p-10">
       <div className="flex h-full w-full flex-col justify-between">
         <h4 className="text-3xl font-bold">{title}</h4>
         <p className="font-sans text-base font-normal">{content}</p>

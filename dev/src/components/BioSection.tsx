@@ -2,15 +2,15 @@ import { Eyebrow } from "./Eyebrow";
 
 export function BioSection() {
   return (
-    <>
-      <div>
-        <div className="grid auto-cols-fr grid-cols-[1fr_1fr] grid-rows-[auto] flex-col items-center justify-center gap-4 bg-gray-800 px-6 pb-24 pt-12 text-sm text-white">
+    <section id="bio-section" className="bg-cc-charcoal text-white">
+      <div className="container mx-auto">
+        <div className="grid auto-cols-fr grid-cols-[1fr_1fr] grid-rows-[auto] flex-col items-center justify-center gap-4 px-6 pb-24 pt-12 text-sm">
           <div className="relative flex w-full max-w-[85.63rem] flex-col items-start justify-center justify-self-end px-3">
             <Eyebrow text="Meet the Presenter" />
             <h2 className="mb-8 text-[4.38rem] font-extrabold leading-none">
               Hi, I'm Fr. Jack.
             </h2>
-            <p className="mb-8 max-w-[44.38rem] text-lg">
+            <p className="mb-8 max-w-[44.38rem] font-sans text-lg">
               Hi, my name is Fr. Jack Knight and I was ordained a priest for the
               Archdiocese of Atlanta in 2018. I am the last born of four
               children (three girls!) to my amazing parents. After college at
@@ -45,6 +45,6 @@ export function BioSection() {
           <div className='-mt-28 h-[110vh] min-h-[auto] bg-[url("https://www.concretecatholic.com/images/Concrete_Catholic_bnw-33.jpg")] bg-cover' />
         </div>
       </div>
-    </>
+    </section>
   );
 }

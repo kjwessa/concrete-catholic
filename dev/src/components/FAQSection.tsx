@@ -4,7 +4,7 @@ import FAQIcon from "@/public/images/icons8-plus.svg";
 
 export function FAQSection() {
   return (
-    <section>
+    <section id="faq-section">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center pb-48 pt-24 text-sm">
           <div>
@@ -58,7 +58,7 @@ interface FAQCardProps {
 
 function FAQCard({ question, answer }: FAQCardProps) {
   return (
-    <div className="mb-10 flex flex-col border-2 border-solid border-yellow-600">
+    <div className="mb-10 flex flex-col rounded-md border-2 border-solid border-yellow-600">
       <div className="flex max-w-full items-center justify-between p-10 text-yellow-600">
         <h5 className="mr-10 cursor-pointer text-xl font-bold text-black">
           {question}
@@ -70,7 +70,7 @@ function FAQCard({ question, answer }: FAQCardProps) {
         />
       </div>
       <div>
-        <p className="mx-10 mb-10 max-w-full text-lg">{answer}</p>
+        <p className="mx-10 mb-10 font-sans text-lg">{answer}</p>
       </div>
     </div>
   );

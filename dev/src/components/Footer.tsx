@@ -2,8 +2,11 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-cc-charcoal flex w-full items-center justify-center px-16 pb-12 pt-20">
-      <div className="mt-5 flex w-full max-w-[1370px] flex-col max-md:max-w-full">
+    <footer
+      id="footer"
+      className="flex w-full items-center justify-center bg-cc-charcoal px-16 pb-12 pt-20"
+    >
+      <div className="container mt-5 flex w-full max-w-[1370px] flex-col max-md:max-w-full">
         <div className="flex justify-between max-md:max-w-full max-md:flex-wrap">
           <form className="flex gap-5 whitespace-nowrap max-md:max-w-full max-md:flex-wrap">
             <input

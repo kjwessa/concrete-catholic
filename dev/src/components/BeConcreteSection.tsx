@@ -1,22 +1,20 @@
 export function BeConcreteSection() {
   return (
-    <section className="bg-cc-crimson">
-      <div>
-        <div
-          className="flex flex-col items-center justify-center pb-24 pt-72 text-center text-sm text-white"
-          id="div-1"
-        >
-          <div className="flex w-[90%] max-w-[85.63rem] flex-col items-start justify-center">
-            <h2 className="mb-8 max-w-[34.38rem] text-[4.38rem] font-extrabold leading-none">
+    <section
+      id="be-concrete-section"
+      className="w-full bg-cc-crimson text-white"
+    >
+      <div className="container mx-auto w-full">
+        <div className="flex w-full flex-col items-center justify-center pb-24 pt-72 text-center text-sm">
+          <div className="flex flex-col items-start justify-center">
+            <h2 className="mb-8 text-[4.38rem] font-extrabold leading-none">
               Be a Concrete Catholic
             </h2>
-
-            <p className="mb-8 max-w-xs text-lg">
+            <p className="mb-8 max-w-xs font-sans text-lg">
               We have created Concrete Catholic as an invitation to walk with us
               as we walk with Christ.
             </p>
-
-            <div className="flex h-auto w-[90%] max-w-[34.38rem] flex-col items-start justify-start self-center overflow-visible">
+            <div className="flex h-auto flex-col items-start justify-start self-center">
               {concreteCardItems.map((card, index) => (
                 <ConcreteCard
                   key={index}
@@ -61,7 +59,7 @@ function ConcreteCard({ title, content }: ConcreteCardProps) {
       <h3 className="mb-8 text-[2.50rem] font-extrabold leading-none">
         {title}
       </h3>
-      <p className="mb-8 max-w-[44.38rem] text-lg">{content}</p>
+      <p className="mb-8 max-w-[44.38rem] font-sans text-lg">{content}</p>
     </div>
   );
 }

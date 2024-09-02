@@ -1,16 +1,16 @@
-import Image from 'next/image';
-
+import Image from "next/image";
+import Link from "next/link";
+import LogoImage from "@/public/images/cc-logo.png";
 export function Logo() {
   return (
-    <div className="flex justify-center items-center">
-      <Image 
-        loading="lazy" 
-        src="" 
-        alt="Concrete Catholic Logo" 
-        width={175} 
+    <Link href="/" className="cursor-pointer">
+      <Image
+        src={LogoImage}
+        alt="Concrete Catholic Logo"
+        width={175}
         height={96}
-        className="aspect-[1.82] w-[175px]" 
+        priority
       />
-    </div>
+    </Link>
   );
 }

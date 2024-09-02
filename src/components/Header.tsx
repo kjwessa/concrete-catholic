@@ -1,23 +1,26 @@
-import { Logo } from './Logo';
-import { NavItem } from './NavItem';
+import { Logo } from "./Logo";
+import { NavItem } from "./NavItem";
 
-
- const navItems = [
-    { label: "About Us" },
-    { label: "Meet Fr. Jack" },
-    { label: "Contact" },
-    { label: "Listen Now", isActive: true }
-  ];
-
+const navItems = [
+  { text: "Meet Fr. Jack", link: "" },
+  { text: "About Us", link: "" },
+  { text: "Contact", link: "" },
+  { text: "Listen Now", link: "", isActive: true },
+];
 
 export function Header() {
   return (
-    <header className="flex z-10 justify-center items-center px-16 pt-9 -mt-12 w-full bg-gray-800 max-md:px-5 max-md:max-w-full">
-      <div className="flex gap-5 justify-between w-full max-w-[1375px] max-md:flex-wrap max-md:max-w-full">
+    <header className="bg-cc-charcoal z-10 w-full px-12 pt-2 text-white text-opacity-75">
+      <div className="container mx-auto flex w-full max-w-screen-2xl justify-between gap-5">
         <Logo />
-        <nav className="flex items-center my-auto text-sm leading-5 text-white text-opacity-50">
+        <nav className="my-auto flex items-center text-sm leading-5">
           {navItems.map((item, index) => (
-            <NavItem key={index} label={item.label} isActive={item.isActive} />
+            <NavItem
+              key={index}
+              text={item.text}
+              link={item.link}
+              isActive={item.isActive}
+            />
           ))}
         </nav>
       </div>

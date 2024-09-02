@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Eyebrow } from "./Eyebrow";
 import FAQIcon from "@/public/images/icons8-plus.svg";
 
 export function FAQSection() {
@@ -7,11 +8,15 @@ export function FAQSection() {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center pb-48 pt-24 text-sm">
           <div>
-            <h2 className="mb-8 text-center text-6xl font-extrabold">
-              Got questions?
-              <br />
-              We have answers.
-            </h2>
+            <div className="text-center">
+              <Eyebrow text="FAQ" />
+              <h2 className="mb-8 text-6xl font-extrabold">
+                Got questions?
+                <br />
+                We have answers.
+              </h2>
+            </div>
+
             <div className="mx-auto">
               {faqCardItems.map((card, index) => (
                 <FAQCard

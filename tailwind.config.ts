@@ -8,8 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-dm-sans)", "sans-serif"],
+        serif: ["var(--font-eb-garamond)", "serif"],
+      },
     },
-  }
+  },
 };
 
 export default config;

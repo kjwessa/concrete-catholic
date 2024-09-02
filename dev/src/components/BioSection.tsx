@@ -10,7 +10,7 @@ export function BioSection() {
             <h2 className="mb-8 text-[4.38rem] font-extrabold leading-none">
               Hi, I'm Fr. Jack.
             </h2>
-            <p className="mb-8 max-w-[44.38rem] text-lg">
+            <p className="mb-8 max-w-[44.38rem] font-sans text-lg">
               Hi, my name is Fr. Jack Knight and I was ordained a priest for the
               Archdiocese of Atlanta in 2018. I am the last born of four
               children (three girls!) to my amazing parents. After college at

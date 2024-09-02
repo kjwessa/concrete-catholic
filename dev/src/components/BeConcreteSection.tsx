@@ -10,7 +10,7 @@ export function BeConcreteSection() {
             <h2 className="mb-8 text-[4.38rem] font-extrabold leading-none">
               Be a Concrete Catholic
             </h2>
-            <p className="mb-8 max-w-xs text-lg">
+            <p className="mb-8 max-w-xs font-sans text-lg">
               We have created Concrete Catholic as an invitation to walk with us
               as we walk with Christ.
             </p>
@@ -59,7 +59,7 @@ function ConcreteCard({ title, content }: ConcreteCardProps) {
       <h3 className="mb-8 text-[2.50rem] font-extrabold leading-none">
         {title}
       </h3>
-      <p className="mb-8 max-w-[44.38rem] text-lg">{content}</p>
+      <p className="mb-8 max-w-[44.38rem] font-sans text-lg">{content}</p>
     </div>
   );
 }

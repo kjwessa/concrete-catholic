@@ -1,38 +1,42 @@
-import Image from 'next/image';
+import Image from "next/image";
+import { BtnMain } from "./BtnMain";
+import { LinkMain } from "./LInkMain";
+import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="self-center mt-64 mb-52 w-full max-w-[1370px] max-md:my-10 max-md:max-w-full">
-      <div className="flex gap-5 max-md:flex-col">
-        <div className="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
-          <div className="flex z-10 flex-col grow px-5 pb-8 text-white max-md:max-w-full">
-            <div className="text-sm leading-5 uppercase text-white text-opacity-50 tracking-[2px] max-md:max-w-full">
-              A podcast for the Every day Catholic
+    <section className="w-full self-center bg-gray-800">
+      <div className="container mx-auto w-full pt-24">
+        <div className="grid min-h-screen w-full grid-cols-2 text-sm text-white">
+          <div className="relative z-20">
+            <div className="uppercase text-white/[0.5]" id="div-2">
+              A podcast for the Every day Catholic
             </div>
-            <h1 className="mt-14 text-7xl font-extrabold leading-[72px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">
-              When was the last time <br /> you had an encounter <br /> with Christ?
-            </h1>
-            <p className="mt-12 text-lg leading-9 max-md:mt-10 max-md:max-w-full">
+
+            <div className="max-w-[47.50rem] overflow-hidden pb-1.5 text-7xl font-extrabold">
+              <h1 className="z-20 max-w-[50.00rem] pb-3.5 pt-6">
+                When was the last time you had an encounter with Christ?
+              </h1>
+            </div>
+
+            <p className="mb-8 max-w-[37.50rem] overflow-visible text-lg">
               Encounter begins with a simple prayer. Let us begin.
             </p>
-            <div className="flex gap-5 pr-20 mt-8 text-xl leading-5 text-yellow-600 max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
-              <button className="px-10 py-5 tracking-wider bg-white max-md:px-5">Listen Now</button>
-              <div className="flex flex-col my-auto">
-                <div>Meet Fr. Jack Knight</div>
-                <div className="shrink-0 mt-2 h-0.5 bg-orange-400" />
-              </div>
+            <div className="flex items-center gap-8">
+              <BtnMain text="Listen Now" link="/#" />
+              <LinkMain link="/#" text="Meet Fr. Jack Knight" />
             </div>
           </div>
-        </div>
-        <div className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col grow justify-center items-start w-full bg-zinc-700 max-md:max-w-full">
-            <Image 
-              loading="lazy" 
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e00a8a812551c2424cf7c9c75ee6f1daee84648129fb9b2b90c705e08b4b9ae4?apiKey=30aa5622865a4691b40c2c8f7feb241d&&apiKey=30aa5622865a4691b40c2c8f7feb241d" 
-              alt="Fr. Jack Knight" 
-              width={586} 
-              height={492} 
-              className="max-w-full aspect-[1.19]"
+
+          <div
+            className="relative flex h-[80vh] w-[40vw] max-w-[46.88rem] flex-col items-center justify-center bg-zinc-700"
+            id="div-3"
+          >
+            <img
+              className="-mb-12 -ml-12 -mr-6 mt-6 inline-block h-full max-h-[56.25rem] w-[37.00rem] max-w-none pb-3 align-middle"
+              id="img-1"
+              src="https://www.concretecatholic.com/images/Concrete_Catholic-86.jpg"
+              srcSet="https://www.concretecatholic.com/images/Concrete_Catholic-86-p-500.jpeg 500w, images/Concrete_Catholic-86.jpg 800w"
             />
           </div>
         </div>

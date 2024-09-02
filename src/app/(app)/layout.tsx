@@ -1,5 +1,5 @@
 import "./globals.css";
-import { FooterLayout } from "../..//components/FooterLayout";
+import { Footer } from "../../components/Footer";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,7 +9,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <main className="flex min-h-svh flex-col">{children}</main>
-        <FooterLayout />
+        <Footer />
       </body>
     </html>
   );

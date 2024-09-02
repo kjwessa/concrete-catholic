@@ -3,18 +3,7 @@ import Image from 'next/image';
 import { useRef, useState } from 'react';
 
 export function SubscribeSection() {
-  const recaptchaRef = useRef(null);
-  const [captchaToken, setCaptchaToken] = useState(null);
 
-  const handleCaptchaChange = (token) => {
-    setCaptchaToken(token);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add form submission logic here, including captchaToken
-    recaptchaRef.current.reset(); // Reset reCAPTCHA after submission
-  };
 
   return (
     <section className="pr-20 pb-16 w-full bg-yellow-600 max-md:pr-5 max-md:max-w-full">
@@ -33,7 +22,7 @@ export function SubscribeSection() {
           <div className="flex flex-col self-stretch pb-4 my-auto max-md:mt-10 max-md:max-w-full">
             <h2 className="text-sm leading-5 text-white max-md:max-w-full">It's great to meet you!</h2>
             <h3 className="self-start mt-8 text-6xl font-extrabold text-white leading-[72px] max-md:text-4xl">Contact Fr. Jack</h3>
-            <form className="mt-8" onSubmit={handleSubmit}>
+            <form className="mt-8" >
               <label htmlFor="name" className="text-base font-bold text-white max-md:max-w-full">Name</label>
               <input type="text" id="name" placeholder="First + Last" className="px-3.5 py-2.5 mt-1.5 w-full text-sm bg-white border border-solid border-stone-300 text-neutral-400 max-md:max-w-full" />
               

@@ -1,62 +1,82 @@
 import Image from "next/image";
+import PrayerSectionImage from "@/public/images/Concrete_Catholic_bnw-81.jpg";
 
 export function PrayerSection() {
   return (
     <section className="flex w-full flex-col p-20 max-md:max-w-full max-md:px-5">
-      <div className="z-10 mt-32 w-full max-w-[1370px] self-center max-md:mt-10 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="flex w-[39%] flex-col max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col text-black max-md:mt-10 max-md:max-w-full">
-              <h2 className="text-sm uppercase leading-5 tracking-[2px] text-zinc-400 max-md:max-w-full">
-                Pray. Encounter. Share.
-              </h2>
-              <h3 className="mt-8 text-4xl font-extrabold leading-10 max-md:max-w-full">
-                Encounter begins with a<br /> simple prayer.
-              </h3>
-              <h4 className="mt-16 text-xl font-extrabold leading-6 max-md:mt-10 max-md:max-w-full">
-                Lord Jesus, reveal yourself to me...
-              </h4>
-              <p className="mt-2.5 text-base leading-8 max-md:max-w-full">
-                This simple prayer begins by acknowledging the person of Christ,{" "}
-                <br /> asking that He make His presence known to us here and
-                now...
-              </p>
-              <h4 className="mt-8 text-xl font-extrabold leading-6 max-md:max-w-full">
-                ...in a real and concrete way today.
-              </h4>
-              <p className="mt-2.5 text-base leading-8 max-md:max-w-full">
-                We pray that Jesus reveals Himself to us in our joys, our
-                sorrows, our <br /> work, our relationships, our boredom, and
-                our reality.
-              </p>
+      <div>
+        <div className="flex flex-col items-center justify-center pb-24 pt-48 text-sm">
+          <div className="relative w-[90%] max-w-[85.63rem]">
+            <div className="grid auto-cols-fr grid-cols-[1fr_1.4fr] grid-rows-[auto_auto] gap-x-10 gap-y-5">
+              <div
+                className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-cover"
+                id="div-3"
+              >
+                <Image
+                  src={PrayerSectionImage}
+                  alt="Concrete Catholic"
+                  layout="fill"
+                  objectFit="cover"
+                  quality={100}
+                />
+              </div>
+
+              <div
+                className="col-start-1 col-end-2 row-start-1 row-end-2"
+                id="div-4"
+              >
+                <div className="uppercase text-zinc-400" id="div-5">
+                  Pray. Encounter. Share.
+                </div>
+
+                <h3 className="mb-8 max-w-[26.25rem] text-[2.50rem] font-extrabold leading-none">
+                  Encounter begins with a simple prayer.
+                </h3>
+
+                <h5 className="mb-3 text-xl font-extrabold">
+                  "Lord Jesus, reveal yourself to me..."
+                  <br />
+                </h5>
+
+                <p className="mb-8 max-w-[31.88rem]">
+                  This simple prayer begins by acknowledging the person of
+                  Christ, asking that He make His presence known to us here and
+                  now...
+                </p>
+
+                <h5 className="mb-3 text-xl font-extrabold">
+                  "...in a real and concrete way today."
+                </h5>
+
+                <p className="mb-8 max-w-[31.88rem]">
+                  We pray that Jesus reveals Himself to us in our joys, our
+                  sorrows, our work, our relationships, our boredom, and our
+                  reality.
+                </p>
+              </div>
+
+              <div
+                className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] min-w-[53.13rem] items-center justify-between bg-yellow-600 px-16 py-20 text-white"
+                id="div-6"
+              >
+                <h4
+                  className="mr-28 max-w-[25.00rem] text-3xl font-extrabold"
+                  id="h4-1"
+                >
+                  "Jesus, reveal yourself to me in a real and concrete way
+                  today."
+                </h4>
+
+                <a
+                  className="relative max-w-full overflow-hidden bg-white px-10 py-5 text-xl text-yellow-600"
+                  href="https://www.concretecatholic.com/#listen-now"
+                >
+                  <div className="cursor-pointer">Listen Now</div>
+
+                  <div className="absolute right-full top-0 z-[1] h-full w-full cursor-pointer bg-zinc-700" />
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="ml-5 flex w-[61%] flex-col max-md:ml-0 max-md:w-full">
-            <div className="relative flex min-h-[600px] grow flex-col px-10 pb-10 max-md:mt-10 max-md:max-w-full">
-              <Image
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/cbe6a066953414bafefb9fa57dfe80951dc73d7fe58c70a34fdba607abc2a0b0?apiKey=30aa5622865a4691b40c2c8f7feb241d&&apiKey=30aa5622865a4691b40c2c8f7feb241d"
-                alt="Background image"
-                layout="fill"
-                objectFit="cover"
-                className="absolute inset-0"
-              />
-              <div className="relative h-[560px] shrink-0 border-2 border-solid border-yellow-600 max-md:max-w-full" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mb-5 ml-48 flex w-[959px] max-w-full justify-between bg-yellow-600 px-16 py-20 max-md:px-5">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="flex w-[76%] flex-col max-md:ml-0 max-md:w-full">
-            <h2 className="grow text-3xl font-extrabold leading-9 text-white max-md:mt-10 max-md:max-w-full">
-              Jesus, reveal yourself to me in a real and concrete way today.
-            </h2>
-          </div>
-          <div className="ml-5 flex w-[24%] flex-col max-md:ml-0 max-md:w-full">
-            <button className="my-auto w-full self-stretch bg-white px-10 py-5 text-xl leading-5 tracking-wider text-yellow-600 max-md:mt-10 max-md:px-5">
-              Listen Now
-            </button>
           </div>
         </div>
       </div>

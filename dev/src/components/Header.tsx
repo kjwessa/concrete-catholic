@@ -1,29 +1,48 @@
+"use client";
+
 import { Logo } from "./Logo";
 import { NavItem } from "./NavItem";
+import Link from "next/link";
+import { useState } from "react";
 
 const navItems = [
-  { text: "Meet Fr. Jack", link: "" },
-  { text: "About Us", link: "" },
-  { text: "Contact", link: "" },
-  { text: "Listen Now", link: "", isActive: true },
+  { text: "Meet Fr. Jack", link: "/meet-fr-jack" },
+  { text: "About Us", link: "/about" },
+  { text: "Contact", link: "/contact" },
+  { text: "Listen Now", link: "/listen", isActive: true },
 ];
 
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header
       id="header"
-      className="z-10 w-full bg-cc-charcoal px-12 pt-2 text-white text-opacity-75"
+      className="z-10 w-full bg-cc-charcoal px-4 pt-2 text-white text-opacity-75 sm:px-12"
+      role="banner"
     >
-      <div className="container mx-auto flex w-full max-w-screen-2xl justify-between gap-5">
+      <div className="container mx-auto flex w-full max-w-screen-2xl items-center justify-between gap-5">
         <Logo />
-        <nav className="my-auto flex items-center text-sm leading-5">
+        <button
+          className="sm:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+        <nav
+          className={`${isMenuOpen ? "block" : "hidden"} my-auto flex flex-col items-center text-sm leading-5 sm:block sm:flex-row`}
+          role="navigation"
+        >
           {navItems.map((item, index) => (
-            <NavItem
-              key={index}
-              text={item.text}
-              link={item.link}
-              isActive={item.isActive}
-            />
+            <Link href={item.link} key={index} passHref>
+              <NavItem
+                text={item.text}
+                isActive={item.isActive}
+                link={item.link}
+              />
+            </Link>
           ))}
         </nav>
       </div>

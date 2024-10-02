@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { Eyebrow } from "./Eyebrow";
 import FAQIcon from "@/public/images/icons8-plus.svg";
@@ -5,19 +8,19 @@ import FAQIcon from "@/public/images/icons8-plus.svg";
 export function FAQSection() {
   return (
     <section id="faq-section">
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-center pb-48 pt-24 text-sm">
-          <div>
-            <div className="text-center">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center justify-center pb-24 pt-24 text-sm">
+          <div className="w-full max-w-3xl">
+            <div className="mb-12 text-center">
               <Eyebrow text="FAQ" />
-              <h2 className="mb-8 text-6xl font-extrabold">
+              <h2 className="mb-8 text-4xl font-extrabold md:text-5xl lg:text-6xl">
                 Got questions?
                 <br />
                 We have answers.
               </h2>
             </div>
 
-            <div className="mx-auto">
+            <div>
               {faqCardItems.map((card, index) => (
                 <FAQCard
                   key={index}
@@ -57,20 +60,29 @@ interface FAQCardProps {
 }
 
 function FAQCard({ question, answer }: FAQCardProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="mb-10 flex flex-col rounded-md border-2 border-solid border-yellow-600">
-      <div className="flex max-w-full items-center justify-between p-10 text-yellow-600">
-        <h5 className="mr-10 cursor-pointer text-xl font-bold text-black">
-          {question}
-        </h5>
+    <div className="mb-6 flex flex-col overflow-hidden rounded-md border-2 border-solid border-yellow-600">
+      <div
+        className="flex max-w-full cursor-pointer items-center justify-between p-6 text-yellow-600"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <h5 className="mr-10 text-xl font-bold text-black">{question}</h5>
         <Image
           alt="FAQ Icon"
-          className="inline-block h-5 w-5 max-w-full cursor-pointer align-middle"
+          className={`inline-block h-5 w-5 max-w-full align-middle transition-transform duration-300 ease-out ${
+            isOpen ? "rotate-45" : ""
+          }`}
           src={FAQIcon}
         />
       </div>
-      <div>
-        <p className="mx-10 mb-10 font-sans text-lg">{answer}</p>
+      <div
+        className={`transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <p className="p-6 font-sans text-lg">{answer}</p>
       </div>
     </div>
   );

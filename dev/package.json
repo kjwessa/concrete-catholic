@@ -1,8 +1,7 @@
 {
   "name": "concrete",
   "version": "1.0.0",
-  "description": "A blank template to get started with Payload 3.0",
-  "license": "MIT",
+  "private": true,
   "type": "module",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
@@ -16,16 +15,39 @@
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "beta",
+    "@payloadcms/live-preview-react": "beta",
     "@payloadcms/next": "beta",
     "@payloadcms/plugin-cloud": "beta",
+    "@payloadcms/plugin-form-builder": "beta",
+    "@payloadcms/plugin-nested-docs": "beta",
+    "@payloadcms/plugin-redirects": "beta",
+    "@payloadcms/plugin-seo": "beta",
     "@payloadcms/richtext-lexical": "beta",
+    "@payloadcms/storage-s3": "beta",
+    "@payloadcms/ui": "beta",
+    "@tailwindcss/typography": "^0.5.14",
+    "@radix-ui/react-checkbox": "^1.1.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "babel-plugin-react-compiler": "0.0.0-experimental-de2cfda-20240912",
+    "clsx": "^2.1.1",
     "cross-env": "^7.0.3",
-    "graphql": "^16.8.1",
+    "eslint-plugin-react-compiler": "0.0.0-experimental-75b9fd4-20240912",
     "next": "15.0.0-canary.160",
+    "graphql": "^16.9.0",
+    "gsap": "^3.12.5",
+    "lexical": "0.17.0",
+    "lucide-react": "^0.380.0",
     "payload": "beta",
+    "payload-admin-bar": "^1.0.6",
+    "prism-react-renderer": "^2.3.1",
     "react": "19.0.0-rc-5dcb0097-20240918",
     "react-dom": "19.0.0-rc-5dcb0097-20240918",
-    "sharp": "0.32.6"
+    "react-hook-form": "7.45.4",
+    "sharp": "0.32.6",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
@@ -33,7 +55,11 @@
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "eslint": "^8",
     "eslint-config-next": "15.0.0-canary.160",
-    "typescript": "5.6.2"
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0"

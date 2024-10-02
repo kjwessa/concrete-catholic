@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container mx-auto max-w-[1370px]">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-6">
-            <Logo className="w-48" />
+            <Logo />
             <p className="text-white/70">Concrete Catholic: Faith in Action</p>
           </div>
 

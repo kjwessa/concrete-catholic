@@ -156,6 +156,41 @@ export default function ConcreteCatholicPage() {
           </div>
         </div>
       </section>
+      <section className="relative mt-44 flex min-h-[850px] w-[1536px] max-w-full flex-col items-center justify-center px-16 py-20 font-extrabold max-md:mt-10 max-md:pl-5">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/atlanta-traffic-guy-1200.jpg"
+            alt=""
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </div>
+        <div className="relative mb-10 mt-16 flex w-full max-w-[1370px] justify-between gap-5 bg-white bg-opacity-90 p-20 shadow-2xl">
+          <blockquote className="mt-24 flex flex-col self-end max-md:mt-10 max-md:max-w-full">
+            <p className="text-4xl leading-9 text-black max-md:max-w-full">
+              Being Christian is not the result of an ethical choice or a lofty idea, but the
+              encounter with an event, a person, which gives life a new horizon and a decisive
+              direction.
+            </p>
+            <cite className="mt-20 text-xl leading-5 tracking-wider text-gray-800 max-md:mt-10 max-md:max-w-full">
+              Pope Benedict XVI
+            </cite>
+            <div className="text-xs uppercase leading-5 tracking-wider text-zinc-400 max-md:max-w-full">
+              Deus Caritas Est
+            </div>
+          </blockquote>
+          <div className="aspect-[0.77] max-w-full shrink-0">
+            <Image
+              src="/images/atlanta-traffic-guy-1200.jpg"
+              alt=""
+              width={500}
+              height={650}
+              objectFit="cover"
+            />
+          </div>
+        </div>
+      </section>
       <section className="flex flex-col w-full max-md:max-w-full">
         <div className="flex flex-col w-full min-h-[998px] max-md:max-w-full">
           <div className="flex flex-1 w-full bg-gray-800 min-h-[934px] max-md:max-w-full" />

@@ -268,6 +268,53 @@ export default function ConcreteCatholicPage() {
           </div>
         </div>
       </section>
+      <section id="invite-section" className="px-16 py-20">
+        <div className="container mx-auto">
+          <div className="">
+            <div className="flex gap-5">
+              <div className="flex w-[67%] flex-col">
+                <div className="my-auto flex flex-col self-stretch pb-8 pr-12">
+                  <div className="mb-4 uppercase text-inherit opacity-70">Fr. Jack Says</div>
+                  <h3 className="mt-8 text-4xl font-extrabold leading-10 text-black max-md:max-w-full">
+                    "Give it a shot, I think you'll love this podcast."
+                  </h3>
+                  <p className="mt-8 text-base leading-8 text-black max-md:mr-1 max-md:max-w-full">
+                    This podcast is the fruit of a simple prayer that has carried me for the last
+                    six years: "Jesus, reveal yourself to me today in a real and concrete way."
+                  </p>
+                  <p className="mt-8 text-base leading-8 text-black max-md:mr-1 max-md:max-w-full">
+                    I invite you to join us as we embark on the path towards a relationship with
+                    Jesus Christ that will change everything.
+                  </p>
+                  <div className="mt-8 flex gap-5 pr-20 text-xl leading-5 max-md:max-w-full max-md:flex-wrap max-md:pr-5">
+                    <Link
+                      className="relative max-w-full cursor-pointer overflow-hidden rounded-sm bg-white px-8 py-3 text-xl text-orange-400"
+                      href="/"
+                    >
+                      Listen Now
+                    </Link>
+                    <Link
+                      href="/"
+                      className="relative inline-block max-w-full cursor-pointer overflow-hidden text-xl text-orange-400"
+                    >
+                      Contact Fr. Jack
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="relative ml-5 flex w-[33%] flex-col max-md:ml-0 max-md:w-full">
+                <Image
+                  loading="lazy"
+                  src="/images/Concrete_Catholic-77.jpg"
+                  alt="Fr. Jack"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="flex flex-wrap gap-10 py-40 pr-64 pl-4 w-full max-md:py-24 max-md:pr-5 max-md:max-w-full">
         <div className="flex flex-col flex-1 shrink px-8 pb-8 rounded basis-0 min-w-[240px] max-md:max-w-full">
           <div className="flex z-10 shrink-0 mt-0 mr-0 rounded border-solid border-[1.5px] border-zinc-400 h-[610px] max-md:max-w-full" />

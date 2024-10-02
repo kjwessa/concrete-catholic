@@ -23,7 +23,7 @@ export function CoverSection() {
           </p>
         </div>
 
-        <div className="-mb-96 grid min-h-[31.25rem] w-full max-w-[85.63rem] auto-cols-fr grid-cols-[1fr_1fr_1fr] grid-rows-[auto] gap-[0.63rem] px-3 text-3xl font-extrabold">
+        <div className="-mb-96 grid min-h-[31.25rem] w-full max-w-[85.63rem] grid-cols-1 gap-4 px-3 text-3xl font-extrabold md:grid-cols-2 lg:grid-cols-3">
           {coverCardItems.map((card, index) => (
             <CoverCard key={index} title={card.title} content={card.content} />
           ))}
@@ -58,10 +58,18 @@ interface CoverCardProps {
 
 function CoverCard({ title, content }: CoverCardProps) {
   return (
-    <div className="relative cursor-pointer bg-cc-slate p-10">
+    <div
+      className="group relative cursor-pointer overflow-hidden rounded-lg bg-cc-slate p-10 transition-all duration-700 ease-in-out hover:scale-105 hover:shadow-xl"
+      role="article"
+      aria-labelledby={`card-title-${title}`}
+    >
       <div className="flex h-full w-full flex-col justify-between">
-        <h4 className="text-3xl font-bold">{title}</h4>
-        <p className="font-sans text-base font-normal">{content}</p>
+        <h4 id={`card-title-${title}`} className="text-3xl font-bold">
+          {title}
+        </h4>
+        <p className="translate-y-full transform font-sans text-base font-normal opacity-0 transition-all duration-700 ease-in-out group-hover:translate-y-0 group-hover:opacity-90">
+          {content}
+        </p>
       </div>
     </div>
   );

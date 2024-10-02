@@ -25,7 +25,9 @@
       "@/images/*": ["public/images/*"],
       "@/lib/*": ["src/app/lib/*"],
       "@/public/*": ["public/*"],
-      "@/types/*": ["src/app/types/*"]
+      "@/styles/*": ["src/styles/*"],
+      "@/types/*": ["src/app/types/*"],
+      "@/utilities/*": ["src/app/utilities/*"]
     },
     "target": "ES2020"
   },

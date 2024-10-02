@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import localFont from "next/font/local";

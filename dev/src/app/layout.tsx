@@ -1,35 +1,33 @@
-import "./styles/globals.css";
-import { FooterOld } from "./components/Footer";
-import { HeaderOld } from "./components/Header";
-import localFont from "next/font/local";
+import './styles/globals.css'
+import { Footer } from '@/components/Footer/index'
+import { Header } from '@/components/Header/index'
+import localFont from 'next/font/local'
 
 // Import DM Sans
 const DMSans = localFont({
-  variable: "--font-dm-sans",
-  display: "swap",
-  src: [
-    { path: "./fonts/DMSans.ttf", weight: "100 400 900", style: "normal" },
-  ],
-});
+  variable: '--font-dm-sans',
+  display: 'swap',
+  src: [{ path: './fonts/DMSans.ttf', weight: '100 400 900', style: 'normal' }],
+})
 
 // Import EB Garamond
 const EBGaramond = localFont({
-  variable: "--font-eb-garamond",
-  display: "swap",
-  src: [{ path: "./fonts/EBGaramond.ttf", weight: "400", style: "normal" }],
-});
+  variable: '--font-eb-garamond',
+  display: 'swap',
+  src: [{ path: './fonts/EBGaramond.ttf', weight: '400', style: 'normal' }],
+})
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <body className={`antialiased ${DMSans.variable} ${EBGaramond.variable}`}>
-        <HeaderOld />
+        <Header />
         <main className="flex min-h-svh flex-col">{children}</main>
-        <FooterOld />
+        <Footer />
       </body>
     </html>
-  );
+  )
 }

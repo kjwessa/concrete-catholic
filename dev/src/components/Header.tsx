@@ -12,7 +12,7 @@ const navItems = [
   { text: "Listen Now", link: "/listen", isActive: true },
 ];
 
-export function Header() {
+export function HeaderOld() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (

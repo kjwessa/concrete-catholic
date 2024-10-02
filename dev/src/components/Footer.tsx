@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "./Logo"; // Make sure to import the Logo component
 
-export function Footer() {
+export function FooterOld() {
   const currentYear = new Date().getFullYear();
 
   return (

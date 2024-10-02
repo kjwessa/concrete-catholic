@@ -2,6 +2,7 @@
   "name": "concrete-catholic",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,17 +11,20 @@
     "clean": "rm -rf .next/ && rm -rf node_modules/ && pnpm install"
   },
   "dependencies": {
-    "next": "^14.2.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "next": "15.0.0-canary.160",
+    "react": "19.0.0-rc-5dcb0097-20240918",
+    "react-dom": "19.0.0-rc-5dcb0097-20240918",
+    "react-hook-form": "7.45.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "sharp": "^0.33.5",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^20.14.13",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/node": "^20.16.2",
+    "@types/react": "npm:types-react@19.0.0-rc-5dcb0097-20240918",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc-5dcb0097-20240918",
     "eslint": "^9.8.0",
     "eslint-config-next": "^14.2.5",
     "postcss": "^8.4.40",
@@ -28,5 +32,15 @@
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "npm:types-react@19.0.0-rc.0",
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
+    }
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.0",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
   }
 }

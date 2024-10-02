@@ -1,94 +1,99 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Logo } from "./Logo"; // Make sure to import the Logo component
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer
-      id="footer"
-      className="flex w-full items-center justify-center bg-cc-charcoal px-16 pb-12 pt-20"
-    >
-      <div className="container mt-5 flex w-full max-w-[1370px] flex-col max-md:max-w-full">
-        <div className="flex justify-between max-md:max-w-full max-md:flex-wrap">
-          <form className="flex gap-5 whitespace-nowrap max-md:max-w-full max-md:flex-wrap">
-            <input
-              type="email"
-              placeholder="name@domain.com"
-              className="flex-1 border-b border-white border-opacity-50 px-5 pb-5 pt-5 text-lg text-white text-opacity-50 max-md:max-w-full"
-            />
-            <button
-              type="submit"
-              className="bg-yellow-600 px-10 py-5 text-xl leading-5 tracking-wider text-white max-md:px-5"
-            >
-              Subscribe
-            </button>
-          </form>
-          <div className="flex gap-5 py-5 pr-5">
-            <a
-              href="#"
-              className="flex flex-col items-start justify-center px-5"
-            >
-              <Image
-                loading="lazy"
-                src=""
-                alt="Social Media Icon 1"
-                width={20}
-                height={20}
-                className="aspect-square w-5"
-              />
-            </a>
-            <a
-              href="#"
-              className="flex flex-col items-start justify-center px-5"
-            >
-              <Image
-                loading="lazy"
-                src=""
-                alt="Social Media Icon 2"
-                width={20}
-                height={20}
-                className="aspect-square w-5"
-              />
-            </a>
+    <footer id="footer" className="bg-cc-charcoal px-4 py-16 md:px-16">
+      <div className="container mx-auto max-w-[1370px]">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <div className="space-y-6">
+            <Logo className="w-48" />
+            <p className="text-white/70">Concrete Catholic: Faith in Action</p>
           </div>
-        </div>
-        <div className="mt-12 flex flex-col border-t border-white border-opacity-10 pt-12 max-md:mt-10 max-md:max-w-full">
-          <div className="flex w-full justify-between gap-5 text-sm leading-5 tracking-[2px] text-white text-opacity-50 max-md:max-w-full max-md:flex-wrap">
-            <Image
-              loading="lazy"
-              src=""
-              alt="Concrete Catholic Logo"
-              width={175}
-              height={96}
-              className="aspect-[1.82] max-w-full shrink-0"
-            />
-            <nav className="my-auto flex">
-              <a href="#" className="px-5 py-1">
-                About Us
-              </a>
-              <a href="#" className="px-5 py-1 text-sm leading-5">
-                Meet Fr. Jack
-              </a>
-              <a href="#" className="px-5 py-1">
-                Listen Now
-              </a>
+
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold text-white">Quick Links</h3>
+            <nav className="flex flex-col space-y-2">
+              {["About Us", "Meet Fr. Jack", "Listen Now"].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="text-white/70 transition-colors hover:text-yellow-600"
+                >
+                  {item}
+                </a>
+              ))}
             </nav>
           </div>
-          <div className="mt-12 flex items-start pl-20 text-xs leading-5 max-md:mt-10 max-md:flex-wrap max-md:pl-5">
-            <div className="self-stretch pb-1.5 pr-1.5 pt-1 tracking-wider text-white text-opacity-50">
-              © 2020 Concrete Catholic.
+
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold text-white">Stay Connected</h3>
+            <form className="flex flex-col space-y-4">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="rounded bg-white/10 p-3 text-white placeholder-white/50"
+                aria-label="Email for newsletter subscription"
+                required
+              />
+              <button
+                type="submit"
+                className="rounded bg-yellow-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-yellow-700"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-white/10 pt-8">
+          <div className="flex flex-wrap items-center justify-between">
+            <div className="flex space-x-4">
+              {["Facebook", "Instagram"].map((platform) => (
+                <a
+                  key={platform}
+                  href={`https://${platform.toLowerCase()}.com/concretecatholic`}
+                  className="flex items-center text-white/70 transition-colors hover:text-yellow-600"
+                  aria-label={`${platform} link`}
+                >
+                  <Image
+                    src={`/images/${platform.toLowerCase()}-icon.svg`}
+                    alt={`${platform} Icon`}
+                    width={24}
+                    height={24}
+                    className="mr-2"
+                  />
+                  <span>{platform}</span>
+                </a>
+              ))}
             </div>
-            <div className="flex gap-1.5 pb-1.5 pr-1 pt-0.5">
-              <div className="tracking-wider text-white text-opacity-50">
-                Photography by
-              </div>
-              <div className="tracking-[2px] text-yellow-600">
+          </div>
+
+          <div className="mt-8 flex flex-wrap justify-between text-sm text-white/50">
+            <div>© {currentYear} Concrete Catholic.</div>
+            <div className="space-x-2">
+              <span>Photography by</span>
+              <Link
+                href="https://www.instagram.com/brivera_photography/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-600 hover:underline"
+              >
                 Brittney Rivera
-              </div>
-            </div>
-            <div className="flex gap-1.5 pb-1.5 pr-1 pt-0.5">
-              <div className="tracking-wider text-white text-opacity-50">
-                + Design by
-              </div>
-              <div className="tracking-[2px] text-yellow-600">Brewww</div>
+              </Link>
+              <span>|</span>
+              <span>Design by</span>
+              <Link
+                href="https://brewww.studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-600 hover:underline"
+              >
+                Brewww Studio
+              </Link>
             </div>
           </div>
         </div>

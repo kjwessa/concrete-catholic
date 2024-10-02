@@ -1,6 +1,6 @@
-import "@/styles/globals.css";
-import { FooterOld } from "@/components/Footer";
-import { HeaderOld } from "@/components/Header";
+import "./styles/globals.css";
+import { FooterOld } from "./components/Footer";
+import { HeaderOld } from "./components/Header";
 import localFont from "next/font/local";
 
 // Import DM Sans
@@ -8,7 +8,7 @@ const DMSans = localFont({
   variable: "--font-dm-sans",
   display: "swap",
   src: [
-    { path: "../fonts/DMSans.ttf", weight: "100 400 900", style: "normal" },
+    { path: "./fonts/DMSans.ttf", weight: "100 400 900", style: "normal" },
   ],
 });
 
@@ -16,7 +16,7 @@ const DMSans = localFont({
 const EBGaramond = localFont({
   variable: "--font-eb-garamond",
   display: "swap",
-  src: [{ path: "../fonts/EBGaramond.ttf", weight: "400", style: "normal" }],
+  src: [{ path: "./fonts/EBGaramond.ttf", weight: "400", style: "normal" }],
 });
 export default function RootLayout({
   children,

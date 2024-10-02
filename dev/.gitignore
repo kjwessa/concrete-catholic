@@ -4,9 +4,6 @@
 .pnp.js
 .yarn/install-state.gz
 
-# building
-/llc
-
 # testing
 /coverage
 
@@ -17,8 +14,6 @@
 # production
 /build
 
-# previous code
-/old
 
 # misc
 .DS_Store
@@ -33,9 +28,6 @@ yarn-error.log*
 .env*.local
 .env
 
-# content collections
-.content-collections
-
 # vercel
 .vercel
 
@@ -43,5 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Million Lint
-.million
+

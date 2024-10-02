@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "A blank template to get started with Payload 3.0",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +12,8 @@
     "lint": "next lint",
     "generate:importmap": "payload generate:importmap",
     "generate:types": "payload generate:types",
-    "clean": "rm -rf .next/ && rm -rf node_modules/ && pnpm install"
+    "clean": "rm -rf .next/ && rm -rf node_modules/ && pnpm install",
+    "payload": "payload"
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "beta",
@@ -30,19 +33,20 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@tailwindcss/typography": "^0.5.14",
     "babel-plugin-react-compiler": "0.0.0-experimental-de2cfda-20240912",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "graphql": "^16.8.1",
     "next": "15.0.0-canary.160",
     "payload": "beta",
     "react": "19.0.0-rc-5dcb0097-20240918",
     "react-dom": "19.0.0-rc-5dcb0097-20240918",
     "react-hook-form": "7.45.4",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
     "sharp": "^0.33.5",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^20.16.2",
+    "@types/node": "^22.5.4",
     "@types/react": "npm:types-react@19.0.0-rc-5dcb0097-20240918",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc-5dcb0097-20240918",
     "eslint": "^9.8.0",
@@ -53,7 +57,10 @@
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
   },
-  "pnpm": {
+  "engines": {
+    "node": "^18.20.2 || >=20.9.0"
+  },
+ "pnpm": {
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-rc.0",
       "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
@@ -62,5 +69,17 @@
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
+  },
+   "next-unused": {
+    "alias": {},
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "entrypoints": [
+      "src/app"
+    ]
   }
 }

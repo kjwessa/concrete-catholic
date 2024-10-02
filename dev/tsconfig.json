@@ -21,9 +21,12 @@
     "paths": {
       "@/*": ["src/*"],
       "@/app/*": ["src/app/*"],
+      "@/collections/*": ["src/collections/*"],
       "@/components/*": ["src/components/*"],
       "@/images/*": ["public/images/*"],
       "@/lib/*": ["src/app/lib/*"],
+      "@payload-config": ["./src/payload.config.ts"],
+      "@/payload-types": ["./src/payload-types.ts"],
       "@/public/*": ["public/*"],
       "@/styles/*": ["src/styles/*"],
       "@/types/*": ["src/app/types/*"],

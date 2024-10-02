@@ -1,5 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withPayload } from "@payloadcms/next/withPayload";
 
-// Export the configuration directly
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Your Next.js config here
+};
+
+export default withPayload(nextConfig);

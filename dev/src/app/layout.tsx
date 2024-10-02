@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { FooterOld } from "@/components/Footer";
+import { HeaderOld } from "@/components/Header";
 import localFont from "next/font/local";
 
 // Import DM Sans
@@ -26,9 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased ${DMSans.variable} ${EBGaramond.variable}`}>
-        <Header />
+        <HeaderOld />
         <main className="flex min-h-svh flex-col">{children}</main>
-        <Footer />
+        <FooterOld />
       </body>
     </html>
   );

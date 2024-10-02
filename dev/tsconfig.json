@@ -23,7 +23,7 @@
       "@/app/*": ["src/app/*"],
       "@/collections/*": ["src/collections/*"],
       "@/components/*": ["src/components/*"],
-      "@/images/*": ["public/images/*"],
+      "@/images/*": ["./public/images/*"],
       "@/lib/*": ["src/app/lib/*"],
       "@payload-config": ["./src/payload.config.ts"],
       "@/payload-types": ["./src/payload-types.ts"],
@@ -37,4 +37,3 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
-

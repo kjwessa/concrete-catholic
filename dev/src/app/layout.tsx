@@ -1,4 +1,4 @@
-import './styles/globals.css'
+import '@/styles/globals.css'
 import { Footer } from '@/components/Footer/index'
 import { Header } from '@/components/Header/index'
 import localFont from 'next/font/local'
@@ -7,14 +7,14 @@ import localFont from 'next/font/local'
 const DMSans = localFont({
   variable: '--font-dm-sans',
   display: 'swap',
-  src: [{ path: './fonts/DMSans.ttf', weight: '100 400 900', style: 'normal' }],
+  src: [{ path: '../fonts/DMSans.ttf', weight: '100 400 900', style: 'normal' }],
 })
 
 // Import EB Garamond
 const EBGaramond = localFont({
   variable: '--font-eb-garamond',
   display: 'swap',
-  src: [{ path: './fonts/EBGaramond.ttf', weight: '400', style: 'normal' }],
+  src: [{ path: '../fonts/EBGaramond.ttf', weight: '400', style: 'normal' }],
 })
 export default function RootLayout({
   children,

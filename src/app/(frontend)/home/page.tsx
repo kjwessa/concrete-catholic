@@ -1,5 +1,3 @@
-import { Hero } from '../../../components/Hero'
-import { LogoSection } from '../../../components/LogoSection'
 import { PrayerSection } from '../../../components/PrayerSection'
 import { AudienceSection } from '../../../components/AudienceSection'
 import { FAQSection } from '../../../components/FAQSection'
@@ -16,8 +14,6 @@ import { ListenNowSection } from '../../../components/ListenNowSection'
 export default function Page() {
   return (
     <>
-      <Hero />
-      <LogoSection />
       <PrayerSection />
       <QuoteSection
         image="/images/atlanta-traffic-guy-1200.jpg"

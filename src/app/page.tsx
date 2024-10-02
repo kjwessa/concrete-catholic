@@ -45,6 +45,57 @@ export default function ConcreteCatholicPage() {
           </div>
         </div>
       </section>
+      <section
+        id="logo-section"
+        className="w-full justify-center border-b border-zinc-100 px-5 py-px"
+      >
+        <div className="flex gap-5 max-md:flex-col">
+          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
+            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
+              <Image
+                src=""
+                alt="Sponsor Logo 1"
+                width={272}
+                height={136}
+                className="mt-4 max-w-full aspect-[2]"
+              />
+            </div>
+          </div>
+          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
+            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
+              <Image
+                src=""
+                alt="Sponsor Logo 2"
+                width={136}
+                height={49}
+                className="mt-16 max-w-full aspect-[2.78] max-md:mt-10"
+              />
+            </div>
+          </div>
+          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
+            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
+              <Image
+                src=""
+                alt="Sponsor Logo 3"
+                width={204}
+                height={51}
+                className="mt-14 max-w-full aspect-[4]"
+              />
+            </div>
+          </div>
+          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
+            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
+              <Image
+                src=""
+                alt="Sponsor Logo 4"
+                width={204}
+                height={53}
+                className="mt-14 max-w-full aspect-[3.85]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="flex flex-col w-full max-md:max-w-full">
         <div className="flex flex-col w-full min-h-[998px] max-md:max-w-full">
           <div className="flex flex-1 w-full bg-gray-800 min-h-[934px] max-md:max-w-full" />

@@ -1,4 +1,3 @@
-import { FAQSection } from '../../../components/FAQSection'
 import { ContactSection } from '../../../components/ContactSection'
 
 import { BeConcreteSection } from '../../../components/BeConcreteSection'
@@ -13,7 +12,7 @@ export default function Page() {
 
       <BioSection />
       <ListenNowSection />
-      <FAQSection />
+
       <ContactSection />
     </>
   )

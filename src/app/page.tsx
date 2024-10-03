@@ -46,156 +46,7 @@ export default function ConcreteCatholicPage() {
           </div>
         </div>
       </section>
-      <section
-        id="logo-section"
-        className="w-full justify-center border-b border-zinc-100 px-5 py-px"
-      >
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
-            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
-              <Image
-                src=""
-                alt="Sponsor Logo 1"
-                width={272}
-                height={136}
-                className="mt-4 max-w-full aspect-[2]"
-              />
-            </div>
-          </div>
-          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
-            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
-              <Image
-                src=""
-                alt="Sponsor Logo 2"
-                width={136}
-                height={49}
-                className="mt-16 max-w-full aspect-[2.78] max-md:mt-10"
-              />
-            </div>
-          </div>
-          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
-            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
-              <Image
-                src=""
-                alt="Sponsor Logo 3"
-                width={204}
-                height={51}
-                className="mt-14 max-w-full aspect-[4]"
-              />
-            </div>
-          </div>
-          <div className="flex w-3/12 flex-col max-md:ml-0 max-md:w-full">
-            <div className="flex max-w-[1920px] grow items-center justify-center self-stretch border border-solid border-zinc-100 px-16 py-20 max-md:px-5">
-              <Image
-                src=""
-                alt="Sponsor Logo 4"
-                width={204}
-                height={53}
-                className="mt-14 max-w-full aspect-[3.85]"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="prayer-section" className="w-full pb-24 pt-48">
-        <div className="container mx-auto">
-          <div className="flex flex-col items-center justify-center text-sm">
-            <div className="relative w-[90%] max-w-[85.63rem]">
-              <div className="grid auto-cols-fr grid-cols-[1fr_1.4fr] grid-rows-[auto_auto] gap-x-10 gap-y-5">
-                <div className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-cover">
-                  <Image
-                    src={PrayerSectionImage}
-                    alt="Concrete Catholic"
-                    layout="fill"
-                    objectFit="cover"
-                    quality={100}
-                  />
-                </div>
-                <div className="col-start-1 col-end-2 row-start-1 row-end-2">
-                  <div className="mb-4 uppercase text-inherit opacity-70">
-                    Pray. Encounter. Share.
-                  </div>
-
-                  <h3 className="mb-8 max-w-[26.25rem] text-[2.50rem] font-extrabold leading-none">
-                    Encounter begins with a simple prayer.
-                  </h3>
-
-                  <h5 className="mb-3 text-xl font-extrabold">
-                    "Lord Jesus, reveal yourself to me..."
-                  </h5>
-
-                  <p className="mb-8 max-w-[31.88rem]">
-                    This simple prayer begins by acknowledging the person of Christ, asking that He
-                    make His presence known to us here and now...
-                  </p>
-
-                  <h5 className="mb-3 text-xl font-extrabold">
-                    "...in a real and concrete way today."
-                  </h5>
-
-                  <p className="mb-8 max-w-[31.88rem]">
-                    We pray that Jesus reveals Himself to us in our joys, our sorrows, our work, our
-                    relationships, our boredom, and our reality.
-                  </p>
-                </div>
-                <div className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] items-center justify-between text-white">
-                  <div className="relative flex w-full min-w-[53.13rem] items-center justify-between bg-cc-sunset px-16 py-20 text-white">
-                    <h4 className="mr-28 max-w-[25.00rem] text-3xl font-extrabold">
-                      Jesus, reveal yourself to me in a real and concrete way today.
-                    </h4>
-                    <Link
-                      className="relative max-w-full cursor-pointer overflow-hidden rounded-sm bg-white px-8 py-3 text-xl text-orange-400"
-                      href="/"
-                    >
-                      Listen Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="relative mt-44 flex min-h-[850px] w-[1536px] max-w-full flex-col items-center justify-center px-16 py-20 font-extrabold max-md:mt-10 max-md:pl-5">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/atlanta-traffic-guy-1200.jpg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
-        </div>
-        <div className="relative mb-10 mt-16 flex w-full max-w-[1370px] justify-between gap-5 bg-white bg-opacity-90 p-20 shadow-2xl">
-          <blockquote className="mt-24 flex flex-col self-end max-md:mt-10 max-md:max-w-full">
-            <p className="text-4xl leading-9 text-black max-md:max-w-full">
-              Being Christian is not the result of an ethical choice or a lofty idea, but the
-              encounter with an event, a person, which gives life a new horizon and a decisive
-              direction.
-            </p>
-            <cite className="mt-20 text-xl leading-5 tracking-wider text-gray-800 max-md:mt-10 max-md:max-w-full">
-              Pope Benedict XVI
-            </cite>
-            <div className="text-xs uppercase leading-5 tracking-wider text-zinc-400 max-md:max-w-full">
-              Deus Caritas Est
-            </div>
-          </blockquote>
-          <div className="aspect-[0.77] max-w-full shrink-0">
-            <Image
-              src="/images/atlanta-traffic-guy-1200.jpg"
-              alt=""
-              width={500}
-              height={650}
-              objectFit="cover"
-            />
-          </div>
-        </div>
-      </section>
       <section className="flex flex-col w-full max-md:max-w-full">
-        <div className="flex flex-col w-full min-h-[998px] max-md:max-w-full">
-          <div className="flex flex-1 w-full bg-gray-800 min-h-[934px] max-md:max-w-full" />
-          <div className="flex w-full bg-stone-50 min-h-[64px] max-md:max-w-full" />
-        </div>
         <div className="flex z-10 flex-wrap gap-10 justify-center items-center px-72 mt-0 w-full min-h-[998px] max-md:px-5 max-md:mt-0 max-md:max-w-full">
           <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-[60px] min-w-[240px] max-md:max-w-full">
             <div className="flex flex-col w-full text-white max-md:max-w-full">
@@ -268,6 +119,98 @@ export default function ConcreteCatholicPage() {
           </div>
         </div>
       </section>
+      <section id="prayer-section" className="w-full pb-24 pt-48">
+        <div className="container mx-auto">
+          <div className="flex flex-col items-center justify-center text-sm">
+            <div className="relative w-[90%] max-w-[85.63rem]">
+              <div className="grid auto-cols-fr grid-cols-[1fr_1.4fr] grid-rows-[auto_auto] gap-x-10 gap-y-5">
+                <div className="relative col-start-2 col-end-3 row-start-1 row-end-2 flex h-[37.50rem] flex-col items-center justify-center bg-cover">
+                  <Image
+                    src={PrayerSectionImage}
+                    alt="Concrete Catholic"
+                    layout="fill"
+                    objectFit="cover"
+                    quality={100}
+                  />
+                </div>
+                <div className="col-start-1 col-end-2 row-start-1 row-end-2">
+                  <div className="mb-4 uppercase text-inherit opacity-70">
+                    Pray. Encounter. Share.
+                  </div>
+
+                  <h3 className="mb-8 max-w-[26.25rem] text-[2.50rem] font-extrabold leading-none">
+                    Encounter begins with a simple prayer.
+                  </h3>
+
+                  <h5 className="mb-3 text-xl font-extrabold">
+                    "Lord Jesus, reveal yourself to me..."
+                  </h5>
+
+                  <p className="mb-8 max-w-[31.88rem]">
+                    This simple prayer begins by acknowledging the person of Christ, asking that He
+                    make His presence known to us here and now...
+                  </p>
+
+                  <h5 className="mb-3 text-xl font-extrabold">
+                    "...in a real and concrete way today."
+                  </h5>
+
+                  <p className="mb-8 max-w-[31.88rem]">
+                    We pray that Jesus reveals Himself to us in our joys, our sorrows, our work, our
+                    relationships, our boredom, and our reality.
+                  </p>
+                </div>
+                <div className="relative col-start-1 col-end-3 row-start-2 row-end-3 -mt-16 flex w-[70%] items-center justify-between text-white">
+                  <div className="relative flex w-full min-w-[53.13rem] items-center justify-between bg-cc-sunset px-16 py-20 text-white">
+                    <h4 className="mr-28 max-w-[25.00rem] text-3xl font-extrabold">
+                      Jesus, reveal yourself to me in a real and concrete way today.
+                    </h4>
+                    <Link
+                      className="relative max-w-full cursor-pointer overflow-hidden rounded-sm bg-white px-8 py-3 text-xl text-orange-400"
+                      href="/"
+                    >
+                      Listen Now
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative flex flex-col justify-center items-center self-center px-0.5 py-32 rounded-md w-[calc(100%-1rem)] overflow-hidden">
+        <Image
+          src="/images/atlanta-traffic-guy-1200.jpg"
+          alt="Background"
+          fill
+          objectFit="cover"
+          quality={100}
+        />
+        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="relative z-10 flex flex-col items-center max-w-4xl">
+          <div className="flex flex-col items-center">
+            <img
+              loading="lazy"
+              src="http://b.io/ext_38-"
+              alt="Concrete Catholic Logo"
+              className="object-contain w-32 mb-12"
+            />
+            <blockquote className="text-5xl font-bold text-center text-yellow-600 leading-tight mb-8">
+              "Being Christian is not the result of an ethical choice or a lofty idea, but the
+              encounter with an event, a person, which gives life a new horizon and a decisive
+              direction."
+            </blockquote>
+            <cite className="text-2xl font-semibold text-white not-italic mb-4">
+              Pope Benedict XVI
+            </cite>
+            <div className="text-sm font-medium uppercase text-zinc-400 tracking-wider">
+              Deus Caritas Est
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="invite-section" className="px-16 py-20">
         <div className="container mx-auto">
           <div className="">
@@ -386,27 +329,6 @@ export default function ConcreteCatholicPage() {
         <div className="flex flex-col flex-1 shrink pb-8 rounded basis-0 min-w-[240px] max-md:max-w-full">
           <div className="flex z-10 shrink-0 -mt-8 rounded border-solid border-[1.5px] border-zinc-400 h-[610px] max-md:max-w-full" />
         </div>
-      </section>
-      <section className="flex flex-col justify-center items-center self-center px-64 py-32 max-w-full rounded bg-gray-800 bg-opacity-90 w-[1888px] max-md:px-5 max-md:py-24">
-        <img
-          loading="lazy"
-          src="http://b.io/ext_38-"
-          alt="Concrete Catholic Logo"
-          className="object-contain max-w-full aspect-[3.12] w-[156px]"
-        />
-        <blockquote className="self-stretch mt-12 text-6xl font-extrabold text-center text-yellow-600 leading-[60px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">
-          "Being Christian is not the result of an ethical choice or a lofty idea, but the encounter
-          with an event, a person, which gives life a new horizon <br />
-          and a decisive direction."
-        </blockquote>
-        <footer className="flex flex-col justify-center items-center mt-12 max-md:mt-10">
-          <cite className="text-xl font-bold leading-none text-white not-italic">
-            Pope Benedict XVI
-          </cite>
-          <div className="mt-2 text-xs font-semibold leading-none text-center uppercase text-zinc-400 tracking-[4px]">
-            Deus Caritas Est
-          </div>
-        </footer>
       </section>
       <section className="flex flex-wrap gap-10 justify-between items-center px-64 py-32 w-full max-md:px-5 max-md:py-24 max-md:max-w-full">
         <div className="flex flex-col self-stretch py-8 my-auto min-w-[240px] w-[656px] max-md:max-w-full">

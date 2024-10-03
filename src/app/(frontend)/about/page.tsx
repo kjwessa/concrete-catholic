@@ -22,29 +22,6 @@ const ConcreteCatholic: React.FC = () => {
   return (
     <>
       <div className="flex flex-col justify-center">
-        <header className="flex flex-wrap gap-10 justify-between items-center px-72 py-4 w-full text-lg leading-none text-white bg-gray-800 border-solid border-b-[0.5px] border-b-white border-b-opacity-50 max-md:px-5 max-md:max-w-full">
-          <img
-            loading="lazy"
-            src={logoSrc}
-            alt="Logo"
-            className="object-contain shrink-0 self-stretch my-auto aspect-[3.12] w-[156px]"
-          />
-          <nav className="flex gap-10 items-start self-stretch my-auto min-w-[240px] max-md:max-w-full">
-            {navItems.map((item, index) => (
-              <div key={index} className={`flex gap-1 items-end ${item.className || ''}`}>
-                <div>{item.label}</div>
-                {item.iconSrc && (
-                  <img
-                    loading="lazy"
-                    src={item.iconSrc}
-                    alt=""
-                    className="object-contain shrink-0 w-6 aspect-square"
-                  />
-                )}
-              </div>
-            ))}
-          </nav>
-        </header>
         <main>
           <section className="flex flex-wrap gap-10 items-center px-64 py-40 w-full bg-gray-800 max-md:px-5 max-md:py-24 max-md:max-w-full">
             <div className="flex flex-col grow shrink items-start self-stretch pb-8 my-auto min-w-[240px] w-[525px] max-md:max-w-full">

@@ -8,14 +8,13 @@ interface Episode {
   duration: string
   season: string
 }
-
 const PodcastPage: React.FC = () => {
   const [episodes, setEpisodes] = useState<Episode[]>([
-    { title: 'Episode Title Here', isPlaying: true, duration: '07:11', season: 'Season 2' },
-    { title: 'Episode Title Here', isPlaying: false, duration: '07:11', season: 'Season 2' },
-    { title: 'Episode Title Here', isPlaying: false, duration: '07:11', season: 'Season 2' },
-    { title: 'Episode Title Here', isPlaying: false, duration: '07:11', season: 'Season 2' },
-    { title: 'Episode Title Here', isPlaying: false, duration: '07:11', season: 'Season 2' },
+    { title: 'The Concrete Faith', isPlaying: true, duration: '23:45', season: 'Season 2' },
+    { title: 'Walking with Christ', isPlaying: false, duration: '18:30', season: 'Season 2' },
+    { title: 'Foundations of Belief', isPlaying: false, duration: '25:12', season: 'Season 2' },
+    { title: 'Living the Gospel', isPlaying: false, duration: '20:55', season: 'Season 2' },
+    { title: 'Building a Spiritual Life', isPlaying: false, duration: '22:03', season: 'Season 2' },
   ])
 
   const togglePlayEpisode = (index: number) => {
@@ -29,156 +28,148 @@ const PodcastPage: React.FC = () => {
 
   return (
     <>
-      <header className="flex flex-wrap gap-10 justify-between items-center px-72 py-4 w-full text-lg leading-none text-white bg-gray-800 border-solid border-b-[0.5px] border-b-white border-b-opacity-50 max-md:px-5 max-md:max-w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1500297b3d9a173a0bd66cba0a672134d9faae8da730743ad7daff0bf978cfc?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-          alt="Logo"
-          className="object-contain shrink-0 self-stretch my-auto aspect-[3.12] w-[156px]"
-        />
-        <nav className="flex gap-10 items-start self-stretch my-auto min-w-[240px] max-md:max-w-full">
-          <div className="flex gap-1 items-end whitespace-nowrap">
-            <div>Episodes</div>
+      <main className="flex relative flex-col justify-center items-center px-64 py-32 w-full bg-gray-800 max-md:px-5 max-md:py-24 max-md:max-w-full">
+        <div className="flex flex-col items-center text-white">
+          <div className="text-sm font-semibold uppercase tracking-wider mb-2">Now Playing</div>
+          <h1 className="text-6xl font-bold text-yellow-600 mb-4 max-md:text-4xl">Brothers</h1>
+          <div className="flex items-center space-x-4 text-lg">
+            <div className="flex items-center">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                  clipRule="evenodd"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+              Fr. Jack Knight
+            </div>
+            <div className="flex items-center">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
+              </svg>
+              4 Episodes
+            </div>
+            <div className="flex items-center">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clipRule="evenodd"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+              Season 2
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-10 justify-center items-start mt-14 max-md:mt-10 max-md:max-w-full">
+          <div className="flex-1 min-w-[240px] max-w-[530px]">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3aa2fc93681c8eb896a27a81eda5fed7a935f5410217d1754c25b538e4485f6?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-              alt=""
-              className="object-contain shrink-0 w-6 aspect-square"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/b8ba0e1860bb81e13887716d601fa42323a7a500c3b899923687482981141e3c?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
+              alt="Podcast cover"
+              className="object-contain rounded aspect-square w-full"
             />
           </div>
-          <div className="rounded">Meet Fr. Jack</div>
-          <div className="whitespace-nowrap rounded">Contact</div>
-          <div className="text-yellow-600 rounded">Listen Now</div>
-        </nav>
-      </header>
-      <main className="flex relative flex-col justify-center items-center px-64 py-32 w-full bg-gray-800 max-md:px-5 max-md:py-24 max-md:max-w-full">
-        <div className="flex z-0 flex-col items-center text-white">
-          <div className="text-xs font-semibold leading-none text-center uppercase tracking-[4px]">
-            Now Playing
-          </div>
-          <h1 className="mt-4 text-7xl font-extrabold leading-none text-center text-yellow-600 max-md:text-4xl">
-            Brothers
-          </h1>
-          <div className="flex gap-2 items-center mt-4 text-lg leading-9">
-            <div className="self-stretch my-auto">Fr. Jack Knight</div>
-            <div className="self-stretch my-auto">4 Episodes</div>
-            <div className="self-stretch my-auto">Season 2</div>
-          </div>
-        </div>
-        <div className="flex z-0 flex-wrap gap-10 justify-center items-start mt-14 max-md:mt-10 max-md:max-w-full">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b8ba0e1860bb81e13887716d601fa42323a7a500c3b899923687482981141e3c?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-            alt="Podcast cover"
-            className="object-contain rounded aspect-square min-w-[240px] w-[530px] max-md:max-w-full"
-          />
-          <div className="flex flex-col h-[528px] min-w-[240px] w-[836px] max-md:max-w-full">
-            <div className="flex relative gap-2 items-start px-4 py-6 w-full text-white rounded bg-zinc-700 max-md:max-w-full">
-              <div className="flex z-0 flex-col">
-                <div className="self-start text-6xl font-extrabold leading-none text-center max-md:text-4xl">
-                  Season 2
+          <div className="flex-1 min-w-[240px] max-w-[836px]">
+            <div className="flex flex-col h-[528px] w-full">
+              <div className="flex relative gap-2 items-start px-4 py-6 w-full text-white rounded bg-zinc-700 max-md:max-w-full">
+                <div className="flex z-0 flex-col">
+                  <div className="self-start text-6xl font-extrabold leading-none text-center max-md:text-4xl">
+                    Season 2
+                  </div>
+                  <div className="flex gap-2 items-center mt-2 text-lg leading-9">
+                    <div className="self-stretch my-auto">12 Episodes</div>
+                    <div className="self-stretch my-auto">07:11 Min</div>
+                  </div>
                 </div>
-                <div className="flex gap-2 items-center mt-2 text-lg leading-9">
-                  <div className="self-stretch my-auto">12 Episodes</div>
-                  <div className="self-stretch my-auto">07:11 Min</div>
-                </div>
-              </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/cd351bd93fe15247b3abb3d4f9c43153ce6b0f18f902817455d576b212e0bb15?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-                alt=""
-                className="object-contain absolute right-1.5 bottom-1.5 z-0 shrink-0 aspect-[0.98] h-[85px] w-[83px]"
-              />
-            </div>
-            <div className="flex flex-wrap gap-10 justify-between items-start px-4 py-2 w-full bg-zinc-100 min-h-[54px] max-md:max-w-full">
-              <div className="flex gap-4 items-center text-lg leading-9 text-center text-gray-800 whitespace-nowrap min-w-[240px] w-[313px]">
-                <div className="flex gap-2 items-center self-stretch my-auto">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b1dd4f61123a6ebba36aa1be567aee481c0143c9fca38b847880a5ee8882192?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-                    alt=""
-                    className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
-                  />
-                  <div className="self-stretch my-auto w-[83px]">Subscribe</div>
-                </div>
-                <div className="flex gap-2 items-center self-stretch my-auto">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f4843d2c48fcd2d1a8ae078aaa11d80ca90c0a6b07412ad26529a131ea120f3?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-                    alt=""
-                    className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
-                  />
-                  <div className="self-stretch my-auto">Share</div>
-                </div>
-              </div>
-              <div className="flex gap-1 items-end px-4 py-2 text-lg leading-none border border-solid border-zinc-700 text-zinc-700">
-                <div>All Season</div>
                 <img
                   loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a83e9711fcc9aced1e0c8bb49bea372269f8e1ce8c477a86daa411bc163baabb?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/cd351bd93fe15247b3abb3d4f9c43153ce6b0f18f902817455d576b212e0bb15?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
                   alt=""
-                  className="object-contain shrink-0 w-4 aspect-square"
+                  className="object-contain absolute right-1.5 bottom-1.5 z-0 shrink-0 aspect-[0.98] h-[85px] w-[83px]"
                 />
               </div>
-            </div>
-            {episodes.map((episode, index) => (
-              <div
-                key={index}
-                className={`flex flex-wrap justify-between items-center px-6 py-4 w-full ${
-                  episode.isPlaying
-                    ? 'text-lg leading-9 bg-white rounded-2xl text-zinc-700'
-                    : 'text-stone-300'
-                } max-md:px-5 max-md:max-w-full`}
-                onClick={() => togglePlayEpisode(index)}
-              >
-                <div
-                  className={`flex flex-wrap flex-1 shrink gap-4 items-center self-stretch my-auto ${
-                    episode.isPlaying ? 'basis-16' : 'basis-0'
-                  } min-w-[240px] max-md:max-w-full`}
-                >
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/339a688cf46ded81a98a529b643227389f69c334a896b8508c641976cda7a08b?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-                    alt=""
-                    className="object-contain shrink-0 self-stretch my-auto aspect-square w-[35px]"
-                  />
-                  <div
-                    className={`self-stretch my-auto ${
-                      episode.isPlaying ? 'flex-1 shrink basis-0' : 'w-[415px]'
-                    } max-md:max-w-full`}
-                  >
-                    {episode.title}
-                  </div>
-                </div>
-                {episode.isPlaying ? (
-                  <>
-                    <div className="self-stretch px-8 my-auto w-[215px] max-md:px-5">
-                      {episode.season}
-                    </div>
-                    <div className="flex gap-2 items-center self-stretch my-auto whitespace-nowrap">
-                      <div className="self-stretch my-auto">{episode.duration}</div>
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ee4f5a60d62885af3a96028f5df12c4ede208789cb5390b3cb1939ced1e572dc?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
-                        alt=""
-                        className="object-contain shrink-0 self-stretch my-auto w-5 aspect-square"
-                      />
-                    </div>
-                  </>
-                ) : (
-                  <div className="flex gap-2 items-center self-stretch my-auto w-5">
+              <div className="flex flex-wrap gap-10 justify-between items-start px-4 py-2 w-full bg-zinc-100 min-h-[54px] max-md:max-w-full">
+                <div className="flex gap-4 items-center text-lg leading-9 text-center text-gray-800 whitespace-nowrap min-w-[240px] w-[313px]">
+                  <div className="flex gap-2 items-center self-stretch my-auto">
                     <img
                       loading="lazy"
-                      src={`http://b.io/ext_${episode.isPlaying ? '9' : '11'}-`}
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b1dd4f61123a6ebba36aa1be567aee481c0143c9fca38b847880a5ee8882192?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
                       alt=""
-                      className="object-contain self-stretch my-auto w-5 aspect-square"
+                      className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                     />
+                    <div className="self-stretch my-auto w-[83px]">Subscribe</div>
                   </div>
-                )}
+                  <div className="flex gap-2 items-center self-stretch my-auto">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/9f4843d2c48fcd2d1a8ae078aaa11d80ca90c0a6b07412ad26529a131ea120f3?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
+                      alt=""
+                      className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                    />
+                    <div className="self-stretch my-auto">Share</div>
+                  </div>
+                </div>
+                <div className="flex gap-1 items-end px-4 py-2 text-lg leading-none border border-solid border-zinc-700 text-zinc-700">
+                  <div>All Season</div>
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/a83e9711fcc9aced1e0c8bb49bea372269f8e1ce8c477a86daa411bc163baabb?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8"
+                    alt=""
+                    className="object-contain shrink-0 w-4 aspect-square"
+                  />
+                </div>
               </div>
-            ))}
+              {episodes.map((episode, index) => (
+                <div
+                  key={index}
+                  className={`flex flex-wrap justify-between items-center px-6 py-4 w-full cursor-pointer transition-all duration-300 ${
+                    episode.isPlaying
+                      ? 'text-lg leading-9 bg-yellow-600 text-white shadow-md'
+                      : 'text-zinc-700 hover:bg-zinc-100'
+                  } max-md:px-5 max-md:max-w-full`}
+                  onClick={() => togglePlayEpisode(index)}
+                >
+                  <div
+                    className={`flex flex-wrap flex-1 shrink gap-4 items-center self-stretch my-auto ${
+                      episode.isPlaying ? 'basis-16' : 'basis-0'
+                    } min-w-[240px] max-md:max-w-full`}
+                  >
+                    <img
+                      loading="lazy"
+                      src={
+                        episode.isPlaying
+                          ? 'https://cdn.builder.io/api/v1/image/assets/TEMP/339a688cf46ded81a98a529b643227389f69c334a896b8508c641976cda7a08b?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8'
+                          : 'https://cdn.builder.io/api/v1/image/assets/TEMP/ee4f5a60d62885af3a96028f5df12c4ede208789cb5390b3cb1939ced1e572dc?placeholderIfAbsent=true&apiKey=687549a059be4b889b95799647c9bdf8'
+                      }
+                      alt=""
+                      className="object-contain shrink-0 self-stretch my-auto aspect-square w-[35px]"
+                    />
+                    <div
+                      className={`self-stretch my-auto ${
+                        episode.isPlaying ? 'flex-1 shrink basis-0 font-semibold' : 'w-[415px]'
+                      } max-md:max-w-full`}
+                    >
+                      {episode.title}
+                    </div>
+                  </div>
+                  <div
+                    className={`flex gap-2 items-center self-stretch my-auto ${episode.isPlaying ? 'text-white' : 'text-zinc-500'}`}
+                  >
+                    <div className="self-stretch my-auto">{episode.duration}</div>
+                    {episode.isPlaying && (
+                      <div className="px-2 py-1 text-xs bg-white text-yellow-600 rounded-full">
+                        {episode.season}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+
         <div className="flex z-0 flex-wrap gap-3 items-start mt-14 max-md:mt-10 max-md:max-w-full">
           <img
             loading="lazy"
@@ -205,7 +196,9 @@ const PodcastPage: React.FC = () => {
             className="object-contain shrink-0 aspect-[3.86] w-[139px]"
           />
         </div>
-        <div className="flex absolute right-4 bottom-4 z-0 flex-wrap gap-6 justify-center items-center self-start px-16 py-2 bg-yellow-600 rounded-lg max-w-[1888px] w-[1888px] max-md:px-5 max-md:max-w-full">
+
+        {/* //TODO improve the play section */}
+        <div className="flex absolute right-4 bottom-4 z-0 flex-wrap gap-6 justify-center items-center self-start px-16 py-2 bg-yellow-700 rounded-lg max-w-[1888px] w-[1888px] max-md:px-5 max-md:max-w-full">
           <div className="flex gap-2.5 items-center self-stretch my-auto">
             <img
               loading="lazy"
@@ -286,40 +279,6 @@ const PodcastPage: React.FC = () => {
                     src="https://play.pod.co/concretecatholic"
                   />
                 </div>
-              </div>
-
-              <div className="mb-16 grid w-4/5 auto-cols-fr grid-cols-[1fr_1fr_1fr] grid-rows-[12.50rem] gap-4 text-teal-300">
-                <a
-                  className="col-start-3 col-end-4 row-start-1 row-end-2 flex max-w-full flex-col items-center justify-center self-stretch overflow-hidden border-2 border-solid border-zinc-100"
-                  href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkLnBvZC5jby9jb25jcmV0ZWNhdGhvbGlj"
-                >
-                  <img
-                    className="inline-block h-11 w-44 max-w-[60%] cursor-pointer align-middle blur-[1px]"
-                    src="https://www.concretecatholic.com/images/google-podcasts-logo-transparent.png"
-                    srcSet="https://www.concretecatholic.com/images/google-podcasts-logo-transparent-p-500.png 500w, images/google-podcasts-logo-transparent.png 640w"
-                  />
-                </a>
-
-                <a
-                  className="col-start-2 col-end-3 row-start-1 row-end-2 flex max-w-full flex-col items-center justify-center self-stretch overflow-hidden border-2 border-solid border-zinc-100"
-                  href="https://podcasts.apple.com/gb/podcast/concrete-catholic/id1493441020"
-                >
-                  <img
-                    className="inline-block h-32 w-64 max-w-full cursor-pointer align-middle blur-[1px]"
-                    src="https://www.concretecatholic.com/images/apple-podcasts-listen-on-logo.jpg"
-                    srcSet="https://www.concretecatholic.com/images/apple-podcasts-listen-on-logo-p-800.jpeg 800w, images/apple-podcasts-listen-on-logo-p-1080.jpeg 1080w, images/apple-podcasts-listen-on-logo.jpg 1166w"
-                  />
-                </a>
-
-                <a
-                  className="col-start-1 col-end-2 row-start-1 row-end-2 flex max-w-full flex-col items-center justify-center self-stretch overflow-hidden border-2 border-solid border-zinc-100"
-                  href="https://open.spotify.com/show/0wEutwZjgwYDADZM9okTPD"
-                >
-                  <img
-                    className="inline-block h-12 w-32 max-w-full cursor-pointer align-middle blur-[1px]"
-                    src="https://www.concretecatholic.com/images/spotify-podcast-logo.png"
-                  />
-                </a>
               </div>
             </div>
           </div>
